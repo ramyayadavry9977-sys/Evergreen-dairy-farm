@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+    <title>Evergreen Dairy Farm</title>
+    <link rel="icon" type="images/png" href="images/logo-1.png">
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+  
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Evergreen Dairy Farm Home">
+                <img src="images/logo-1.png"
+                     alt="Evergreen Dairy Farm logo"
+                     class="brand-logo">
+
+                <span class="brand-text">
+                    <span class="brand-name">Evergreen</span>
+                    <span class="brand-subtitle">DAIRY FARM</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="mainNav"
+                    aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="24" height="24"
+                     fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+                <div class="home-dropdown">
+                    <button class="nav-link home-dropdown-btn"
+                            id="homeDropdownBtn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="homeDropdown">
+                        Home
+
+                        <svg class="dropdown-arrow"
+                             viewBox="0 0 24 24"
+                             width="15" height="15"
+                             fill="none" stroke="currentColor"
+                             stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdown">
+                        <a href="index.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 1</span>
+                            <span class="dropdown-link-description">Classic Design</span>
+                        </a>
+
+                        <a href="home-2.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 2</span>
+                            <span class="dropdown-link-description">Premium Design</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="our-farm.html" class="nav-link">Our Farm</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact-us.html" class="nav-link">Contact Us</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn"
+                        id="themeBtn"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+
+                    <svg viewBox="0 0 24 24" width="20" height="20"
+                         fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+                    </svg>
+                </button>
+
+                
+<button class="header-icon-btn" id="directionBtn"
+        type="button" aria-label="Toggle text direction"
+        title="Toggle text direction">
+    <svg viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         aria-hidden="true">
+        <path d="M7 8L3 12L7 16"/>
+        <path d="M3 12H11"/>
+        <path d="M17 8L21 12L17 16"/>
+        <path d="M13 12H21"/>
+    </svg>
+</button>
+
+                
+                    <a href="login.html" class="btn btn-primary login-btn">
+    Login
+</a>
+
+            </div>
+        </div>
+    </header>
+
+
+
+<!-- BLOG HERO SECTION -->
+<section class="blog-hero-section">
+
+    <div class="blog-hero-background" aria-hidden="true"></div>
+    <div class="blog-hero-overlay" aria-hidden="true"></div>
+
+    <div class="blog-hero-container">
+
+        <div class="blog-hero-glass-card">
+
+            <div class="blog-hero-meta">
+                <span class="blog-hero-meta-label">EVERGREEN JOURNAL</span>
+                <span class="blog-hero-meta-divider"></span>
+                <span class="blog-hero-meta-date">FARM STORIES & INSIGHTS</span>
+            </div>
+
+            <h1>
+                Growing
+                <span class="blog-hero-highlight">Knowledge</span>
+                for a Greener Future.
+            </h1>
+
+            <p class="blog-hero-description">
+                Discover dairy insights, farm stories, practical product
+                guides, and everyday inspiration for a more thoughtful
+                way of enjoying dairy goodness.
+            </p>
+
+            <div class="blog-hero-actions">
+
+                <a href="#latest-articles" class="blog-hero-primary-btn">
+                    Explore the Journal
+                </a>
+
+                <a href="#featured-article" class="blog-hero-secondary-btn">
+                    Read the Latest Story
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="blog-hero-bottom-accent" aria-hidden="true"></div>
+
+</section>
+
+
+
+<!-- FEATURED BLOG ARTICLES -->
+<section class="featured-blog-section" id="featured-article">
+    <div class="featured-blog-container">
+
+        <div class="featured-blog-heading">
+            <span class="featured-blog-label">
+                <span class="featured-blog-label-line"></span>
+                EDITOR'S PICK
+            </span>
+            <h2>Our Featured <span>Story.</span></h2>
+            <p>
+                A closer look at the care, knowledge, and everyday practices
+                behind the dairy products we enjoy.
+            </p>
+        </div>
+
+        <!-- ARTICLE 1 -->
+        <article class="featured-blog-card">
+
+            <div class="featured-blog-visual">
+                <img
+                    src="images/image-35.jpg"
+                    alt="Dairy farm with cows in a green countryside setting"
+                    loading="lazy"
+                >
+                <span class="featured-blog-image-badge">Featured Story</span>
+            </div>
+
+            <div class="featured-blog-content">
+
+                <div class="featured-blog-meta">
+                    <span class="featured-blog-category">FARM LIFE</span>
+                    <span class="featured-blog-meta-dot"></span>
+                    <span>5 min read</span>
+                </div>
+
+                <h3>
+                    From Our Farm to Your Table:
+                    <span>Understanding Dairy Goodness</span>
+                </h3>
+
+                <p>
+                    Discover the thoughtful practices, careful handling,
+                    and everyday attention that help bring dairy products
+                    from farm to home. Explore the journey behind the
+                    goodness found in everyday dairy essentials.
+                </p>
+
+                <div class="featured-blog-divider"></div>
+
+                <div class="featured-blog-footer">
+                    <span class="featured-blog-author">
+                        <span class="featured-blog-author-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Evergreen Editorial Team</span>
+                    </span>
+
+                    <a href="blog-details-1.html" class="featured-blog-read-link">
+                        Read Full Article
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="featured-blog-card">
+
+            <div class="featured-blog-visual">
+                <img
+                    src="images/image-25.jpg"
+                    alt="Fresh dairy products stored in a clean kitchen"
+                    loading="lazy"
+                >
+                <span class="featured-blog-image-badge">Dairy Guide</span>
+            </div>
+
+            <div class="featured-blog-content">
+
+                <div class="featured-blog-meta">
+                    <span class="featured-blog-category">DAIRY KNOWLEDGE</span>
+                    <span class="featured-blog-meta-dot"></span>
+                    <span>4 min read</span>
+                </div>
+
+                <h3>
+                    Keep It Fresh:
+                    <span>Simple Tips for Storing Dairy Products</span>
+                </h3>
+
+                <p>
+                    Learn simple ways to store milk, paneer, curd, and other
+                    dairy products safely at home. Understand why refrigeration,
+                    clean containers, and checking product labels matter
+                    for maintaining quality and freshness.
+                </p>
+
+                <div class="featured-blog-divider"></div>
+
+                <div class="featured-blog-footer">
+                    <span class="featured-blog-author">
+                        <span class="featured-blog-author-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Evergreen Editorial Team</span>
+                    </span>
+
+                    <a href="blog-details-2.html" class="featured-blog-read-link">
+                        Read Full Article
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- ARTICLE 3 -->
+        <article class="featured-blog-card">
+
+            <div class="featured-blog-visual">
+                <img
+                    src="images/image-32.jpg"
+                    alt="Dairy farmer caring for cows on the farm"
+                    loading="lazy"
+                >
+                <span class="featured-blog-image-badge">Life on the Farm</span>
+            </div>
+
+            <div class="featured-blog-content">
+
+                <div class="featured-blog-meta">
+                    <span class="featured-blog-category">FARM LIFE</span>
+                    <span class="featured-blog-meta-dot"></span>
+                    <span>6 min read</span>
+                </div>
+
+                <h3>
+                    Behind the Scenes:
+                    <span>A Day in the Life of a Dairy Farm</span>
+                </h3>
+
+                <p>
+                    Take a closer look at the everyday responsibilities
+                    involved in dairy farming, from caring for animals
+                    and keeping their surroundings clean to maintaining
+                    a consistent daily farm routine.
+                </p>
+
+                <div class="featured-blog-divider"></div>
+
+                <div class="featured-blog-footer">
+                    <span class="featured-blog-author">
+                        <span class="featured-blog-author-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Evergreen Editorial Team</span>
+                    </span>
+
+                    <a href="blog-details-3.html" class="featured-blog-read-link">
+                        Read Full Article
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- ARTICLE 4 -->
+        <article class="featured-blog-card">
+
+            <div class="featured-blog-visual">
+                <img
+                    src="images/image-34.jpg"
+                    alt="Paneer and fresh ingredients prepared for a homemade dish"
+                    loading="lazy"
+                >
+                <span class="featured-blog-image-badge">Recipe Ideas</span>
+            </div>
+
+            <div class="featured-blog-content">
+
+                <div class="featured-blog-meta">
+                    <span class="featured-blog-category">FOOD &amp; RECIPES</span>
+                    <span class="featured-blog-meta-dot"></span>
+                    <span>5 min read</span>
+                </div>
+
+                <h3>
+                    Make Every Meal Special:
+                    <span>Easy Ways to Enjoy Paneer at Home</span>
+                </h3>
+
+                <p>
+                    Explore simple meal ideas using paneer, from quick
+                    snacks to family-friendly dishes. Discover how this
+                    versatile dairy ingredient can bring variety and
+                    flavor to your everyday cooking.
+                </p>
+
+                <div class="featured-blog-divider"></div>
+
+                <div class="featured-blog-footer">
+                    <span class="featured-blog-author">
+                        <span class="featured-blog-author-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Evergreen Editorial Team</span>
+                    </span>
+
+                    <a href="blog-details-4.html" class="featured-blog-read-link">
+                        Read Full Article
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- EXPLORE BY CATEGORY -->
+<section class="dairy-category-section" id="dairy-categories">
+    <div class="dairy-category-container">
+
+        <div class="dairy-category-heading">
+            <span class="dairy-category-label">
+                <span class="dairy-category-label-line"></span>
+                EXPLORE OUR FARM
+            </span>
+
+            <h2>Explore Our Dairy <span>Stories.</span></h2>
+
+            <p>
+                Discover fresh ideas, farm experiences, healthy choices,
+                and delicious recipes from our dairy farm.
+            </p>
+        </div>
+
+        <div class="dairy-category-grid">
+
+            <a href="blog.html?category=dairy-products"
+               class="dairy-category-card">
+                <img src="images/image-38.jpg"
+                     alt="Fresh milk and dairy products">
+
+                <div class="dairy-category-overlay"></div>
+
+                <div class="dairy-category-content">
+                    <span class="dairy-category-tag">DAIRY PRODUCTS</span>
+                    <h3>Freshness in Every Drop</h3>
+                    <span class="dairy-category-link">
+                        Explore Stories <span aria-hidden="true">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <a href="blog.html?category=farm-life"
+               class="dairy-category-card">
+                <img src="images/image-36.jpg"
+                     alt="Cows grazing on a green dairy farm">
+
+                <div class="dairy-category-overlay"></div>
+
+                <div class="dairy-category-content">
+                    <span class="dairy-category-tag">FARM LIFE</span>
+                    <h3>Life on Our Farm</h3>
+                    <span class="dairy-category-link">
+                        Explore Stories <span aria-hidden="true">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <a href="blog.html?category=health-nutrition"
+               class="dairy-category-card">
+                <img src="images/image-37.jpg"
+                     alt="Nutritious dairy foods and fresh milk">
+
+                <div class="dairy-category-overlay"></div>
+
+                <div class="dairy-category-content">
+                    <span class="dairy-category-tag">HEALTH & NUTRITION</span>
+                    <h3>Goodness for Every Day</h3>
+                    <span class="dairy-category-link">
+                        Explore Stories <span aria-hidden="true">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <a href="blog.html?category=recipes"
+               class="dairy-category-card">
+                <img src="images/image-39.jpg"
+                     alt="Homemade recipes prepared with dairy products">
+
+                <div class="dairy-category-overlay"></div>
+
+                <div class="dairy-category-content">
+                    <span class="dairy-category-tag">DAIRY RECIPES</span>
+                    <h3>Delicious Ideas to Try</h3>
+                    <span class="dairy-category-link">
+                        Explore Stories <span aria-hidden="true">→</span>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="farm-values-section" id="farm-values">
+    <div class="farm-values-container">
+
+        <div class="farm-values-heading">
+            <span class="farm-values-label">
+                <span class="farm-values-label-line"></span>
+                OUR FARM VALUES
+            </span>
+
+            <h2>Goodness You Can <span>Trust.</span></h2>
+
+            <p>
+                Every day, we focus on responsible farming, animal care,
+                and bringing the goodness of dairy closer to your family.
+            </p>
+        </div>
+
+        <div class="farm-values-grid">
+
+            <!-- FEATURE 1 -->
+            <article class="farm-value-card">
+                <div class="farm-value-icon">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+        <path d="M12 3C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-12Z"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 16a3 3 0 0 0 3 3"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round"/>
+    </svg>
+</div>
+
+                <span class="farm-value-number">01</span>
+
+                <h3>Farm-Fresh Quality</h3>
+
+                <p>
+                    We value freshness and careful handling throughout
+                    our dairy production process.
+                </p>
+
+                <span class="farm-value-accent"></span>
+            </article>
+
+            <!-- FEATURE 2 -->
+            <article class="farm-value-card">
+                <div class="farm-value-icon">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+        <path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 5.9l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.3 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
+
+                <span class="farm-value-number">02</span>
+
+                <h3>Caring for Our Cows</h3>
+
+                <p>
+                    Clean surroundings, suitable nutrition, and attentive
+                    care are important parts of responsible dairy farming.
+                </p>
+
+                <span class="farm-value-accent"></span>
+            </article>
+
+            <!-- FEATURE 3 -->
+            <article class="farm-value-card">
+                <div class="farm-value-icon">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+        <path d="M20 4C11 4 5 7 5 13a5 5 0 0 0 5 5c6 0 10-6 10-14Z"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 21c3-6 7-9 13-12"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round"/>
+    </svg>
+</div>
+
+                <span class="farm-value-number">03</span>
+
+                <h3>Responsible Farming</h3>
+
+                <p>
+                    We believe in thoughtful farm management and making
+                    practical choices to reduce unnecessary waste.
+                </p>
+
+                <span class="farm-value-accent"></span>
+            </article>
+
+            <!-- FEATURE 4 -->
+            <article class="farm-value-card">
+                <div class="farm-value-icon">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+        <circle cx="9" cy="7" r="3"
+                stroke="currentColor" stroke-width="1.8"/>
+        <path d="M3 20v-2a6 6 0 0 1 12 0v2"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round"/>
+        <path d="M16 4.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.5V20"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round"/>
+    </svg>
+</div>
+
+                <span class="farm-value-number">04</span>
+
+                <h3>Family-Focused </h3>
+
+                <p>
+                    Our goal is to help families make informed choices
+                    about dairy as part of a balanced everyday diet.
+                </p>
+
+                <span class="farm-value-accent"></span>
+            </article>
+
+        </div>
+
+        <div class="farm-values-bottom">
+            <div class="farm-values-bottom-content">
+                <span class="farm-values-bottom-icon">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+        <path d="M12 21V12"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round"/>
+        <path d="M12 13C5 13 4 8 4 5c5 0 8 2 8 8Z"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linejoin="round"/>
+        <path d="M12 17c0-5 3-8 8-8 0 4-2 8-8 8Z"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linejoin="round"/>
+    </svg>
+</span>
+
+                <div>
+                    <h3>Rooted in Care. Growing with Purpose.</h3>
+                    <p>
+                        Discover the values and everyday practices
+                        that guide our dairy farm.
+                    </p>
+                </div>
+            </div>
+
+            <a href="About-us.html" class="farm-values-button">
+                Discover Our Farm
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="blog-cta-section">
+    <div class="blog-cta-container">
+        <span class="blog-cta-label">FRESH FROM OUR FARM</span>
+
+        <h2>Love Fresh Dairy?</h2>
+
+        <p>
+            Discover our farm, our values, and the goodness behind every drop.
+        </p>
+
+        <a href="about-us.html" class="blog-cta-btn">
+            Discover Our Farm
+            <span aria-hidden="true">&rarr;</span>
+        </a>
+
+        <span class="blog-cta-accent"></span>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo-1.png"
+                         alt="Evergreen Dairy Farm logo">
+
+                    <span class="footer-brand-text">
+                        <span class="footer-brand-name">Evergreen</span>
+                        <span class="footer-brand-subtitle">DAIRY FARM</span>
+                    </span>
+                </a>
+
+                <p>
+                    Bringing farm freshness to your home with care,
+                    quality, and a commitment to better dairy.
+                </p>
+
+
+                <div class="footer-socials">
+    <a href="https://www.facebook.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.3V13h2.8v8z"/>
+        </svg>
+    </a>
+
+    <a href="https://www.instagram.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle class="instagram-dot" cx="17.5" cy="6.8" r="1"/>
+        </svg>
+    </a>
+
+   <a href="https://www.youtube.com/"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="YouTube">
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+            d="M23.2 6.2a3 3 0 0 0-2.1-2.1C19.2 3.6 12 3.6 12 3.6s-7.2 0-9.1.5A3 3 0 0 0 .8 6.2 31 31 0 0 0 .3 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.1.5 9.1.5s7.2 0 9.1-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5.8 31 31 0 0 0-.5-5.8Z"
+            fill="currentColor"
+            stroke="none"/>
+
+        <path d="m9.6 8.5 6.1 3.5-6.1 3.5Z"
+              fill="#FFFFFF"
+              stroke="none"/>
+    </svg>
+</a>
+
+    <a href="https://wa.me/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z"/>
+            <path d="M9 8.5c.3-.5.6-.5.9-.5l.6 1.5-.7.9c.6 1.3 1.5 2.1 2.8 2.7l.8-.9 1.6.7c.2.1.2.5.1.8-.3.7-1 1.2-1.8 1.2-2.4-.2-5.9-3.1-6-5.3 0-.5.7-1 1.7-1.1Z"/>
+        </svg>
+    </a>
+</div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="our-farm.html">Our Farm</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="blog.html">Blog</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Have questions about our dairy products or services?</p>
+                <a href="contact-us.html" class="btn btn-primary footer-contact-btn">
+                    Contact Our Team
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span> Evergreen Dairy Farm.
+                All rights reserved.
+            </p>
+
+            <a href="index.html">Back to Home</a>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const homeDropdown = document.querySelector(".home-dropdown");
+    const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+
+    const themeBtn = document.getElementById("themeBtn");
+    const directionBtn = document.getElementById("directionBtn");
+
+    const currentYear = document.getElementById("currentYear");
+
+    /* FOOTER YEAR */
+
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+
+    /* DARK MODE */
+
+    function updateThemeButton() {
+        if (!themeBtn) return;
+
+        const isDark = root.classList.contains("dark-mode");
+
+        themeBtn.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+
+        themeBtn.setAttribute(
+            "title",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+
+    const savedTheme = localStorage.getItem("evergreenTheme");
+
+    if (savedTheme === "dark") {
+        root.classList.add("dark-mode");
+    } else {
+        root.classList.remove("dark-mode");
+    }
+
+    updateThemeButton();
+
+    if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+            root.classList.toggle("dark-mode");
+
+            const theme = root.classList.contains("dark-mode")
+                ? "dark"
+                : "light";
+
+            localStorage.setItem("evergreenTheme", theme);
+            updateThemeButton();
+        });
+    }
+
+  
+
+    function updateDirectionButton() {
+        if (!directionBtn) return;
+
+        const isRTL = root.getAttribute("dir") === "rtl";
+
+        directionBtn.setAttribute(
+            "aria-label",
+            isRTL ? "Switch to left-to-right layout" : "Switch to right-to-left layout"
+        );
+
+        directionBtn.setAttribute(
+            "title",
+            isRTL ? "Switch to LTR" : "Switch to RTL"
+        );
+    }
+
+    const savedDirection = localStorage.getItem("evergreenDirection");
+
+    root.setAttribute("dir", savedDirection === "rtl" ? "rtl" : "ltr");
+    updateDirectionButton();
+
+    if (directionBtn) {
+        directionBtn.addEventListener("click", () => {
+            const newDirection =
+                root.getAttribute("dir") === "rtl" ? "ltr" : "rtl";
+
+            root.setAttribute("dir", newDirection);
+            localStorage.setItem("evergreenDirection", newDirection);
+
+            updateDirectionButton();
+        });
+    }
+
+
+    function closeHomeDropdown() {
+        if (!homeDropdown || !homeDropdownBtn) return;
+
+        homeDropdown.classList.remove("is-open");
+        homeDropdownBtn.setAttribute("aria-expanded", "false");
+    }
+
+    if (homeDropdown && homeDropdownBtn) {
+        homeDropdownBtn.addEventListener("click", (event) => {
+            event.stopPropagation();
+
+            const isOpen = homeDropdown.classList.toggle("is-open");
+
+            homeDropdownBtn.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!homeDropdown.contains(event.target)) {
+                closeHomeDropdown();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeHomeDropdown();
+            }
+        });
+
+        homeDropdown.querySelectorAll(".dropdown-link").forEach((link) => {
+            link.addEventListener("click", closeHomeDropdown);
+        });
+    }
+
+   
+
+    function closeMobileMenu() {
+        if (!mainNav || !menuToggle) return;
+
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+        closeHomeDropdown();
+    }
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("is-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+
+            if (!isOpen) {
+                closeHomeDropdown();
+            }
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth <= 1000) {
+                    closeMobileMenu();
+                }
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 1000) {
+                closeMobileMenu();
+            }
+        });
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector("#mainNav");
+
+    if (!nav) return;
+
+    const currentPage =
+        window.location.pathname.split("/").filter(Boolean).pop()
+        || "index.html";
+
+    const navLinks = nav.querySelectorAll("a.nav-link");
+    const dropdownLinks = nav.querySelectorAll(".dropdown-link");
+    const homeButton = document.querySelector("#homeDropdownBtn");
+
+    // Highlight the current navigation page
+    navLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight the current Home dropdown page
+    dropdownLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight Home when either home page is open
+    if (homeButton) {
+        const isHomePage =
+            currentPage === "index.html" ||
+            currentPage === "home-2.html";
+
+        homeButton.classList.toggle("active", isHomePage);
+    }
+});
+
+    </script>
+</body>
+</html>

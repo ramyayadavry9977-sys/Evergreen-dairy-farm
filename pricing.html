@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+    <title>Evergreen Dairy Farm</title>
+    <link rel="icon" type="images/png" href="images/logo-1.png">
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="pricing.css">
+</head>
+
+<body>
+
+  
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Evergreen Dairy Farm Home">
+                <img src="images/logo-1.png"
+                     alt="Evergreen Dairy Farm logo"
+                     class="brand-logo">
+
+                <span class="brand-text">
+                    <span class="brand-name">Evergreen</span>
+                    <span class="brand-subtitle">DAIRY FARM</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="mainNav"
+                    aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="24" height="24"
+                     fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+                <div class="home-dropdown">
+                    <button class="nav-link home-dropdown-btn"
+                            id="homeDropdownBtn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="homeDropdown">
+                        Home
+
+                        <svg class="dropdown-arrow"
+                             viewBox="0 0 24 24"
+                             width="15" height="15"
+                             fill="none" stroke="currentColor"
+                             stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdown">
+                        <a href="index.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 1</span>
+                            <span class="dropdown-link-description">Classic Design</span>
+                        </a>
+
+                        <a href="home-2.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 2</span>
+                            <span class="dropdown-link-description">Premium Design</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="our-farm.html" class="nav-link">Our Farm</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact-us.html" class="nav-link">Contact Us</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn"
+                        id="themeBtn"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+
+                    <svg viewBox="0 0 24 24" width="20" height="20"
+                         fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+                    </svg>
+                </button>
+
+                
+<button class="header-icon-btn" id="directionBtn"
+        type="button" aria-label="Toggle text direction"
+        title="Toggle text direction">
+    <svg viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         aria-hidden="true">
+        <path d="M7 8L3 12L7 16"/>
+        <path d="M3 12H11"/>
+        <path d="M17 8L21 12L17 16"/>
+        <path d="M13 12H21"/>
+    </svg>
+</button>
+
+                
+                    <a href="login.html" class="btn btn-primary login-btn">
+    Login
+</a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PRICING PAGE - 1. PAGE BANNER ===== -->
+    <section class="pr-banner">
+      <img src="images/image-11.avif" alt="" class="pr-banner-bg">
+      <div class="pr-banner-inner">
+
+
+        <h1>Simple, Fresh <span>Pricing</span></h1>
+        <p>Choose a plan that fits your family. Farm-fresh dairy at honest prices, with no hidden charges.</p>
+
+        <ul class="pr-badges">
+          <li>Free morning delivery</li>
+          <li>Pause or skip anytime</li>
+          <li>No hidden charges</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ===== PRICING PAGE - 2. PLAN SWITCHER ===== -->
+    <section class="pr-switch-section">
+      <div class="pr-switch-wrap">
+
+        <p class="pr-switch-label">Choose how you want to pay</p>
+
+        <div class="pr-switch" data-period="monthly" role="group" aria-label="Billing period">
+          <span class="pr-switch-thumb" aria-hidden="true"></span>
+          <button type="button" data-period="monthly" aria-pressed="true">Monthly <em>Save 15%</em></button>
+          <button type="button" data-period="weekly" aria-pressed="false">Weekly</button>
+          <button type="button" data-period="daily" aria-pressed="false">Daily</button>
+        </div>
+
+        <p class="pr-switch-note">Prices below update when you switch.</p>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- ===== PRICING PAGE - 3. PRICING PLANS =====
+         Sample prices - replace with your real ones.
+         The data-monthly / data-weekly / data-daily values are swapped by the switcher. -->
+    <section class="pr-plans">
+      <div class="pr-plans-grid">
+
+        <article class="pr-plan">
+          <h3>Starter</h3>
+          <p class="pr-desc">500 ml fresh milk every day</p>
+          <div class="pr-price">
+            <span class="pr-amount" data-monthly="₹1,200" data-weekly="₹345" data-daily="₹50">₹1,200</span>
+            <small data-monthly="/ month" data-weekly="/ week" data-daily="/ day">/ month</small>
+          </div>
+          <ul class="pr-list">
+            <li>500 ml fresh milk daily</li>
+            <li>Free morning delivery</li>
+            <li>Pause or skip anytime</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <a href="login.html" class="pr-btn green">Choose Starter</a>
+        </article>
+
+        <article class="pr-plan featured">
+          <span class="pr-tag">MOST POPULAR</span>
+          <h3>Family</h3>
+          <p class="pr-desc">1 L fresh milk and curd every day</p>
+          <div class="pr-price">
+            <span class="pr-amount" data-monthly="₹2,100" data-weekly="₹605" data-daily="₹90">₹2,100</span>
+            <small data-monthly="/ month" data-weekly="/ week" data-daily="/ day">/ month</small>
+          </div>
+          <ul class="pr-list">
+            <li>1 L milk + curd daily</li>
+            <li>Free morning delivery</li>
+            <li>Priority support</li>
+            <li>Weekly ghee or butter</li>
+          </ul>
+          <a href="login.html" class="pr-btn">Choose Family</a>
+        </article>
+
+        <article class="pr-plan">
+          <h3>Premium</h3>
+          <p class="pr-desc">The full farm collection</p>
+          <div class="pr-price">
+            <span class="pr-amount" data-monthly="₹3,400" data-weekly="₹980" data-daily="₹145">₹3,400</span>
+            <small data-monthly="/ month" data-weekly="/ week" data-daily="/ day">/ month</small>
+          </div>
+          <ul class="pr-list">
+            <li>Milk, curd, ghee and paneer</li>
+            <li>Cheese and butter included</li>
+            <li>Free morning delivery</li>
+            <li>Dedicated support</li>
+          </ul>
+          <a href="login.html" class="pr-btn green">Choose Premium</a>
+        </article>
+
+      </div>
+    </section>
+
+
+        <!-- ===== PRICING PAGE - 4. PRODUCT PRICE LIST =====
+         Sample prices - replace with your real ones. -->
+    <section class="pr-list-section">
+      <div class="pr-list-wrap">
+
+        <div class="pr-list-head">
+          <span class="pr-label">Per item pricing</span>
+          <h2>Prefer to buy single products?</h2>
+          <p>No plan needed. Order what you want, when you want it.</p>
+        </div>
+
+        <div class="pr-table-card">
+          <table class="pr-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Available in</th>
+                <th>Price</th>
+                <th><span class="pr-sr">Order</span></th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td data-label="Product"><div class="pr-item"><img src="images/image-4.webp" alt="Fresh Milk" loading="lazy"><div><strong>Fresh Milk</strong><span>Creamy, farm-fresh every morning</span></div></div></td>
+            <td data-label="Available in">500 ml, 1 L</td>
+            <td data-label="Price"><span><b>₹60</b> / litre</span></td>
+            <td class="pr-act"><a class="pr-order" href="login.html">Order</a></td>
+          </tr>
+          <tr>
+            <td data-label="Product"><div class="pr-item"><img src="images/image-5.jpg" alt="Fresh Curd" loading="lazy"><div><strong>Fresh Curd</strong><span>Thick, creamy and set daily</span></div></div></td>
+            <td data-label="Available in">500 g, 1 kg</td>
+            <td data-label="Price"><span><b>₹80</b> / kg</span></td>
+            <td class="pr-act"><a class="pr-order" href="login.html">Order</a></td>
+          </tr>
+          <tr>
+            <td data-label="Product"><div class="pr-item"><img src="images/image-6.jpg" alt="Pure Ghee" loading="lazy"><div><strong>Pure Ghee</strong><span>Rich golden, traditionally made</span></div></div></td>
+            <td data-label="Available in">250 g, 500 g, 1 kg</td>
+            <td data-label="Price"><span><b>₹900</b> / kg</span></td>
+            <td class="pr-act"><a class="pr-order" href="login.html">Order</a></td>
+          </tr>
+          <tr>
+            <td data-label="Product"><div class="pr-item"><img src="images/image-7.jpg" alt="Fresh Butter" loading="lazy"><div><strong>Fresh Butter</strong><span>Smooth and creamy</span></div></div></td>
+            <td data-label="Available in">100 g, 500 g</td>
+            <td data-label="Price"><span><b>₹520</b> / kg</span></td>
+            <td class="pr-act"><a class="pr-order" href="login.html">Order</a></td>
+          </tr>
+          <tr>
+            <td data-label="Product"><div class="pr-item"><img src="images/image-8.jpeg" alt="Fresh Paneer" loading="lazy"><div><strong>Fresh Paneer</strong><span>Soft and fresh, cut to order</span></div></div></td>
+            <td data-label="Available in">250 g, 500 g, 1 kg</td>
+            <td data-label="Price"><span><b>₹380</b> / kg</span></td>
+            <td class="pr-act"><a class="pr-order" href="login.html">Order</a></td>
+          </tr>
+          <tr>
+            <td data-label="Product"><div class="pr-item"><img src="images/image-9.avif" alt="Cheese" loading="lazy"><div><strong>Cheese</strong><span>For snacks, sandwiches and meals</span></div></div></td>
+            <td data-label="Available in">200 g, 500 g</td>
+            <td data-label="Price"><span><b>₹450</b> / kg</span></td>
+            <td class="pr-act"><a class="pr-order" href="login.html">Order</a></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="pr-list-note">Prices may vary slightly with the season.</p>
+
+      </div>
+    </section>
+
+
+<!-- PRICING PAGE - 5. FREQUENTLY ASKED QUESTIONS -->
+<section class="pr-faq-section" id="pricing-faq">
+    <div class="pr-faq-container">
+
+        <div class="pr-faq-heading">
+            <span class="pr-faq-label">
+                <span class="pr-faq-label-line"></span>
+                GOT QUESTIONS?
+            </span>
+
+            <h2>Frequently Asked <span>Questions</span></h2>
+
+            <p>
+                Everything you need to know about our dairy plans,
+                fresh products, deliveries, and payments.
+            </p>
+        </div>
+
+        <div class="pr-faq-list">
+
+            <article class="pr-faq-item active">
+                <button class="pr-faq-question"
+                        type="button"
+                        aria-expanded="true"
+                        aria-controls="pr-faq-answer-1"
+                        id="pr-faq-question-1">
+                    <span>Can I pause or cancel my subscription anytime?</span>
+                    <span class="pr-faq-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="pr-faq-answer"
+                     id="pr-faq-answer-1"
+                     role="region"
+                     aria-labelledby="pr-faq-question-1">
+                    <div class="pr-faq-answer-inner">
+                        Yes. You can pause or cancel your subscription according
+                        to your plan's terms. Please contact our support team
+                        for help managing your delivery schedule.
+                    </div>
+                </div>
+            </article>
+
+            <article class="pr-faq-item">
+                <button class="pr-faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="pr-faq-answer-2"
+                        id="pr-faq-question-2">
+                    <span>Do you provide free morning delivery?</span>
+                    <span class="pr-faq-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="pr-faq-answer"
+                     id="pr-faq-answer-2"
+                     role="region"
+                     aria-labelledby="pr-faq-question-2"
+                     hidden>
+                    <div class="pr-faq-answer-inner">
+                        Morning delivery is included with our subscription
+                        plans in eligible service areas. Please confirm
+                        availability for your location before ordering.
+                    </div>
+                </div>
+            </article>
+
+            <article class="pr-faq-item">
+                <button class="pr-faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="pr-faq-answer-3"
+                        id="pr-faq-question-3">
+                    <span>Can I change my dairy plan later?</span>
+                    <span class="pr-faq-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="pr-faq-answer"
+                     id="pr-faq-answer-3"
+                     role="region"
+                     aria-labelledby="pr-faq-question-3"
+                     hidden>
+                    <div class="pr-faq-answer-inner">
+                        Yes. You can request an upgrade or downgrade to another
+                        available plan. Any change will depend on the plan's
+                        terms and your next billing or delivery cycle.
+                    </div>
+                </div>
+            </article>
+
+            <article class="pr-faq-item">
+                <button class="pr-faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="pr-faq-answer-4"
+                        id="pr-faq-question-4">
+                    <span>How can I make payments?</span>
+                    <span class="pr-faq-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="pr-faq-answer"
+                     id="pr-faq-answer-4"
+                     role="region"
+                     aria-labelledby="pr-faq-question-4"
+                     hidden>
+                    <div class="pr-faq-answer-inner">
+                        Available payment methods depend on your ordering
+                        system. You can display your accepted online payment
+                        options and any available payment-on-delivery option
+                        here.
+                    </div>
+                </div>
+            </article>
+
+            <article class="pr-faq-item">
+                <button class="pr-faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="pr-faq-answer-5"
+                        id="pr-faq-question-5">
+                    <span>Are your dairy products fresh every day?</span>
+                    <span class="pr-faq-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="pr-faq-answer"
+                     id="pr-faq-answer-5"
+                     role="region"
+                     aria-labelledby="pr-faq-question-5"
+                     hidden>
+                    <div class="pr-faq-answer-inner">
+                        Our dairy service focuses on freshness and careful
+                        handling. Product availability and delivery schedules
+                        may vary depending on the item and your location.
+                    </div>
+                </div>
+            </article>
+
+            <article class="pr-faq-item">
+                <button class="pr-faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="pr-faq-answer-6"
+                        id="pr-faq-question-6">
+                    <span>Can I order individual products without a subscription?</span>
+                    <span class="pr-faq-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="pr-faq-answer"
+                     id="pr-faq-answer-6"
+                     role="region"
+                     aria-labelledby="pr-faq-question-6"
+                     hidden>
+                    <div class="pr-faq-answer-inner">
+                        Yes. You can select individual products from our
+                        product price list without choosing a recurring
+                        subscription plan.
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="pr-faq-contact">
+            <div class="pr-faq-contact-text">
+                <h3>Still have questions?</h3>
+                <p>We're happy to help you find the right dairy plan.</p>
+            </div>
+
+            <a href="contact-us.html" class="pr-faq-contact-btn">
+                Contact Us
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PRICING PAGE - 6. FINAL CTA -->
+<section class="pr-final-cta">
+    <div class="pr-final-cta-container">
+
+        <span class="pr-final-cta-label">
+            GOODNESS FROM OUR FARM
+        </span>
+
+        <h2>
+            Ready for Fresh Farm <span>Goodness?</span>
+        </h2>
+
+        <p>
+            Choose your perfect dairy plan and enjoy fresh dairy
+            goodness delivered to your doorstep.
+        </p>
+
+        <div class="pr-final-cta-actions">
+            <a href="login.html" class="pr-final-cta-primary">
+                Choose Your Plan
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a href="contact-us.html" class="pr-final-cta-secondary">
+                Talk to Our Team
+            </a>
+        </div>
+
+        <div class="pr-final-cta-note">
+            <span class="pr-final-cta-dot"></span>
+            Fresh choices. Honest prices. Farm goodness.
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo-1.png"
+                         alt="Evergreen Dairy Farm logo">
+
+                    <span class="footer-brand-text">
+                        <span class="footer-brand-name">Evergreen</span>
+                        <span class="footer-brand-subtitle">DAIRY FARM</span>
+                    </span>
+                </a>
+
+                <p>
+                    Bringing farm freshness to your home with care,
+                    quality, and a commitment to better dairy.
+                </p>
+
+
+                <div class="footer-socials">
+    <a href="https://www.facebook.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.3V13h2.8v8z"/>
+        </svg>
+    </a>
+
+    <a href="https://www.instagram.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle class="instagram-dot" cx="17.5" cy="6.8" r="1"/>
+        </svg>
+    </a>
+
+   <a href="https://www.youtube.com/"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="YouTube">
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+            d="M23.2 6.2a3 3 0 0 0-2.1-2.1C19.2 3.6 12 3.6 12 3.6s-7.2 0-9.1.5A3 3 0 0 0 .8 6.2 31 31 0 0 0 .3 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.1.5 9.1.5s7.2 0 9.1-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5.8 31 31 0 0 0-.5-5.8Z"
+            fill="currentColor"
+            stroke="none"/>
+
+        <path d="m9.6 8.5 6.1 3.5-6.1 3.5Z"
+              fill="#FFFFFF"
+              stroke="none"/>
+    </svg>
+</a>
+
+    <a href="https://wa.me/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z"/>
+            <path d="M9 8.5c.3-.5.6-.5.9-.5l.6 1.5-.7.9c.6 1.3 1.5 2.1 2.8 2.7l.8-.9 1.6.7c.2.1.2.5.1.8-.3.7-1 1.2-1.8 1.2-2.4-.2-5.9-3.1-6-5.3 0-.5.7-1 1.7-1.1Z"/>
+        </svg>
+    </a>
+</div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="our-farm.html">Our Farm</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="blog.html">Blog</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Have questions about our dairy products or services?</p>
+                <a href="contact-us.html" class="btn btn-primary footer-contact-btn">
+                    Contact Our Team
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span> Evergreen Dairy Farm.
+                All rights reserved.
+            </p>
+
+            <a href="index.html">Back to Home</a>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const homeDropdown = document.querySelector(".home-dropdown");
+    const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+
+    const themeBtn = document.getElementById("themeBtn");
+    const directionBtn = document.getElementById("directionBtn");
+
+    const currentYear = document.getElementById("currentYear");
+
+    /* FOOTER YEAR */
+
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+
+    /* DARK MODE */
+
+    function updateThemeButton() {
+        if (!themeBtn) return;
+
+        const isDark = root.classList.contains("dark-mode");
+
+        themeBtn.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+
+        themeBtn.setAttribute(
+            "title",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+
+    const savedTheme = localStorage.getItem("evergreenTheme");
+
+    if (savedTheme === "dark") {
+        root.classList.add("dark-mode");
+    } else {
+        root.classList.remove("dark-mode");
+    }
+
+    updateThemeButton();
+
+    if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+            root.classList.toggle("dark-mode");
+
+            const theme = root.classList.contains("dark-mode")
+                ? "dark"
+                : "light";
+
+            localStorage.setItem("evergreenTheme", theme);
+            updateThemeButton();
+        });
+    }
+
+  
+
+    function updateDirectionButton() {
+        if (!directionBtn) return;
+
+        const isRTL = root.getAttribute("dir") === "rtl";
+
+        directionBtn.setAttribute(
+            "aria-label",
+            isRTL ? "Switch to left-to-right layout" : "Switch to right-to-left layout"
+        );
+
+        directionBtn.setAttribute(
+            "title",
+            isRTL ? "Switch to LTR" : "Switch to RTL"
+        );
+    }
+
+    const savedDirection = localStorage.getItem("evergreenDirection");
+
+    root.setAttribute("dir", savedDirection === "rtl" ? "rtl" : "ltr");
+    updateDirectionButton();
+
+    if (directionBtn) {
+        directionBtn.addEventListener("click", () => {
+            const newDirection =
+                root.getAttribute("dir") === "rtl" ? "ltr" : "rtl";
+
+            root.setAttribute("dir", newDirection);
+            localStorage.setItem("evergreenDirection", newDirection);
+
+            updateDirectionButton();
+        });
+    }
+
+
+    function closeHomeDropdown() {
+        if (!homeDropdown || !homeDropdownBtn) return;
+
+        homeDropdown.classList.remove("is-open");
+        homeDropdownBtn.setAttribute("aria-expanded", "false");
+    }
+
+    if (homeDropdown && homeDropdownBtn) {
+        homeDropdownBtn.addEventListener("click", (event) => {
+            event.stopPropagation();
+
+            const isOpen = homeDropdown.classList.toggle("is-open");
+
+            homeDropdownBtn.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!homeDropdown.contains(event.target)) {
+                closeHomeDropdown();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeHomeDropdown();
+            }
+        });
+
+        homeDropdown.querySelectorAll(".dropdown-link").forEach((link) => {
+            link.addEventListener("click", closeHomeDropdown);
+        });
+    }
+
+   
+
+    function closeMobileMenu() {
+        if (!mainNav || !menuToggle) return;
+
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+        closeHomeDropdown();
+    }
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("is-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+
+            if (!isOpen) {
+                closeHomeDropdown();
+            }
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth <= 1000) {
+                    closeMobileMenu();
+                }
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 1000) {
+                closeMobileMenu();
+            }
+        });
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector("#mainNav");
+
+    if (!nav) return;
+
+    const currentPage =
+        window.location.pathname.split("/").filter(Boolean).pop()
+        || "index.html";
+
+    const navLinks = nav.querySelectorAll("a.nav-link");
+    const dropdownLinks = nav.querySelectorAll(".dropdown-link");
+    const homeButton = document.querySelector("#homeDropdownBtn");
+
+    // Highlight the current navigation page
+    navLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight the current Home dropdown page
+    dropdownLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight Home when either home page is open
+    if (homeButton) {
+        const isHomePage =
+            currentPage === "index.html" ||
+            currentPage === "home-2.html";
+
+        homeButton.classList.toggle("active", isHomePage);
+    }
+});
+
+
+
+
+      (function () {
+        var sw = document.querySelector('.pr-switch');
+        if (!sw) return;
+        var buttons = sw.querySelectorAll('button');
+
+        function setPeriod(period) {
+          sw.setAttribute('data-period', period);
+
+          buttons.forEach(function (btn) {
+            btn.setAttribute('aria-pressed', btn.getAttribute('data-period') === period);
+          });
+
+          // Any element with data-monthly / data-weekly / data-daily gets its text swapped
+          document.querySelectorAll('[data-' + period + ']').forEach(function (el) {
+            el.textContent = el.getAttribute('data-' + period);
+          });
+        }
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            setPeriod(btn.getAttribute('data-period'));
+          });
+        });
+      })();
+
+
+    
+// PRICING PAGE - FAQ ACCORDION
+
+document.querySelectorAll(".pr-faq-question").forEach((button) => {
+    button.addEventListener("click", () => {
+        const currentItem = button.closest(".pr-faq-item");
+        const currentAnswer = document.getElementById(
+            button.getAttribute("aria-controls")
+        );
+
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".pr-faq-item").forEach((item) => {
+            const question = item.querySelector(".pr-faq-question");
+            const answer = document.getElementById(
+                question.getAttribute("aria-controls")
+            );
+
+            item.classList.remove("active");
+            question.setAttribute("aria-expanded", "false");
+            answer.hidden = true;
+        });
+
+        if (!isOpen) {
+            currentItem.classList.add("active");
+            button.setAttribute("aria-expanded", "true");
+            currentAnswer.hidden = false;
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1F5F3A">
+  <title>User Dashboard | Evergreen Dairy Farm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+  <script>
+    try {
+      document.documentElement.classList.toggle(
+        'dark-mode',
+        localStorage.getItem('evergreenTheme') === 'dark'
+      );
+      document.documentElement.setAttribute(
+        'dir',
+        localStorage.getItem('evergreenDirection') || 'ltr'
+      );
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v11H2zM13 10h5l4 4v3h-9"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M9 4H5v16h4M16 8l4 4-4 4M20 12H9"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-rupee" viewBox="0 0 24 24"><path d="M6 4h12M6 9h12M9 4c6 0 6 9 0 9H6l8 7"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 13H5zM9 7a3 3 0 0 1 6 0"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM3 7l2-3h12M16 14h2"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M12 9v12M3 13h18M12 9C9 9 7 4 10 4s2 5 2 5zm0 0c3 0 5-5 2-5s-2 5-2 5z"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7M12 17h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5z"/></symbol>
+</svg>
+
+<div class="app">
+
+  <aside class="side" id="side">
+    <a class="brand" href="index.html">
+      <img src="images/logo-1.png" alt="Evergreen Dairy Farm" onerror="this.style.display='none'">
+      <span><b>Evergreen</b><small>DAIRY FARM</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Dashboard">
+      <button class="on" data-p="overview"><svg><use href="#i-home"/></svg>Dashboard</button>
+      <button data-p="schedule"><svg><use href="#i-cal"/></svg>Delivery Schedule</button>
+      <button data-p="track"><svg><use href="#i-truck"/></svg>Track Delivery</button>
+      <button data-p="extras"><svg><use href="#i-bag"/></svg>Order Extras</button>
+      <button data-p="billing"><svg><use href="#i-card"/></svg>Billing History</button>
+      <button data-p="wallet"><svg><use href="#i-wallet"/></svg>Wallet</button>
+      <button data-p="offers"><svg><use href="#i-gift"/></svg>Offers &amp; Referrals</button>
+      <button data-p="profile"><svg><use href="#i-user"/></svg>My Plan &amp; Profile</button>
+      <button data-p="help"><svg><use href="#i-help"/></svg>Help &amp; Support</button>
+    </nav>
+
+    <button class="logout" data-logout><svg><use href="#i-out"/></svg>Logout</button>
+  </aside>
+
+  <div class="main">
+
+    <header class="top">
+      <button class="burger" id="burger" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <div class="page-heading">
+        <h1>User Dashboard</h1>
+        <small id="sub">Overview</small>
+      </div>
+
+      <div class="tools">
+
+        <button class="ibtn" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+          <svg id="themeIcon"><use href="#i-moon"/></svg>
+        </button>
+
+        <button class="ibtn direction-btn" id="directionToggle" type="button" aria-label="Switch to right-to-left layout" title="Switch text direction">
+          <span id="directionLabel">RTL</span>
+        </button>
+
+        <div class="dd">
+          <button class="ibtn" id="bell" aria-label="Notifications" aria-expanded="false">
+            <svg><use href="#i-bell"/></svg>
+            <i id="cnt">3</i>
+          </button>
+          <div class="menu" id="bellMenu">
+            <h4>Notifications</h4>
+            <div id="notes"></div>
+            <button class="mi" id="readAll">Mark all as read</button>
+          </div>
+        </div>
+
+        <div class="dd">
+          <button class="ava" id="ava" aria-label="Profile menu" aria-expanded="false">PS</button>
+          <div class="menu" id="avaMenu">
+            <h4>Priya Sharma<br><small class="s" style="font-weight:400">priya.sharma@email.com</small></h4>
+            <button class="mi" data-p="profile"><svg><use href="#i-user"/></svg>My profile</button>
+            <button class="mi" data-p="billing"><svg><use href="#i-card"/></svg>Billing history</button>
+            <button class="mi" data-logout><svg><use href="#i-out"/></svg>Logout</button>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="views">
+
+      <section class="view on" id="overview">
+        <div class="welcome">
+          <div>
+            <h2>Welcome back, Priya!</h2>
+            <p id="today">Here is your dairy summary.</p>
+          </div>
+          <span class="chip">Family Plan · Active</span>
+        </div>
+
+        <div class="grid g4 mt">
+          <div class="card met"><span class="ic"><svg><use href="#i-truck"/></svg></span><div><div class="num">11</div><div class="s">Deliveries this month</div></div></div>
+          <div class="card met"><span class="ic"><svg><use href="#i-drop"/></svg></span><div><div class="num">22 L</div><div class="s">Milk received</div></div></div>
+          <div class="card met"><span class="ic"><svg><use href="#i-rupee"/></svg></span><div><div class="num">₹2,100</div><div class="s">Next bill · 1 Nov</div></div></div>
+          <div class="card met"><span class="ic"><svg><use href="#i-clock"/></svg></span><div><div class="num">98%</div><div class="s">On-time deliveries</div></div></div>
+        </div>
+
+        <div class="grid g2 mt">
+          <div class="card">
+            <h3>Litres delivered this week</h3>
+            <p class="s">Today is highlighted in gold.</p>
+            <div class="bars" id="bars"></div>
+          </div>
+          <div class="card">
+            <h3>Today's delivery</h3>
+            <p class="s">1 L milk + 500 g curd</p>
+            <div class="row"><span class="badge out" id="ovStatus">Out for delivery</span><span class="s">Arriving by 6:42 AM</span></div>
+            <button class="btn mt" data-p="track">Track live</button>
+            <h3 class="mt small-heading">Upcoming</h3>
+            <div id="upcoming"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="schedule">
+        <div class="grid g2">
+          <div class="card">
+            <h3>Weekly delivery schedule</h3>
+            <p class="s">Switch days on or off, set the milk quantity and your preferred time slot.</p>
+            <div id="days" class="schedule-days"></div>
+          </div>
+          <div>
+            <div class="card">
+              <h3>Schedule summary</h3>
+              <div class="sum"><span>Delivery days</span><b id="sDays">7</b></div>
+              <div class="sum"><span>Milk per week</span><b id="sL">8 L</b></div>
+              <div class="sum"><span>Estimated monthly milk cost</span><b id="sC">₹2,060</b></div>
+              <button class="btn mt" data-toast="Schedule saved. Changes apply from tomorrow.">Save schedule</button>
+            </div>
+            <div class="card mt">
+              <h3>Going away? Pause deliveries</h3>
+              <p class="s">No charge for paused days.</p>
+              <label class="l" for="pauseFrom">From</label><input id="pauseFrom" type="date" value="2026-10-20">
+              <label class="l" for="pauseTo">To</label><input id="pauseTo" type="date" value="2026-10-24">
+              <button class="btn o mt" data-toast="Deliveries paused from 20 to 24 Oct.">Pause deliveries</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="track">
+        <div class="grid g2">
+          <div class="card">
+            <div class="track-heading">
+              <div><h3>Order #DL-2410-12</h3><p class="s">1 L milk + 500 g curd · Slot 6:00 – 7:00 AM</p></div>
+              <span class="badge out" id="trStatus">Out for delivery</span>
+            </div>
+            <div class="steps" id="steps"></div>
+            <div class="row track-row">
+              <svg><use href="#i-clock"/></svg>
+              <div><b id="eta">Estimated arrival 6:42 AM</b><div class="s" id="dist">1.2 km away</div></div>
+              <button class="btn o" id="refresh">Refresh status</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Your delivery partner</h3>
+            <div class="partner mt"><span class="ava">RK</span><div><b>Ravi Kumar</b><div class="s">Delivery partner · 4.9 rating</div></div></div>
+            <a class="btn mt" href="tel:+910000000000">Call partner</a>
+            <p class="s mt">Tip: leave a bag or container at your door so we can deliver without ringing the bell.</p>
+          </div>
+        </div>
+        <div class="card mt">
+          <h3>Recent deliveries</h3>
+          <div class="tw"><table><thead><tr><th>Date</th><th>Items</th><th>Time</th><th>Status</th></tr></thead><tbody id="recent"></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="view" id="billing">
+        <div class="grid g4 billing-metrics">
+          <div class="card met"><span class="ic"><svg><use href="#i-rupee"/></svg></span><div><div class="num">₹2,100</div><div class="s">Amount due · 1 Nov</div></div></div>
+          <div class="card met"><span class="ic"><svg><use href="#i-check"/></svg></span><div><div class="num">₹8,400</div><div class="s">Paid in the last 4 months</div></div></div>
+          <div class="card met"><span class="ic"><svg><use href="#i-card"/></svg></span><div><div class="num">UPI</div><div class="s">priya@upi · Auto-pay on</div></div></div>
+        </div>
+        <div class="card mt">
+          <h3>Invoices</h3>
+          <p class="s">Download any invoice or pay your upcoming bill.</p>
+          <div class="tabs" id="tabs"><button class="on" data-f="all">All</button><button data-f="Paid">Paid</button><button data-f="Due">Due</button></div>
+          <div class="tw"><table><thead><tr><th>Invoice</th><th>Billing month</th><th>Amount</th><th>Due date</th><th>Status</th><th>Action</th></tr></thead><tbody id="inv"></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="view" id="profile">
+        <div class="grid g2e">
+          <div class="card">
+            <h3>My subscription</h3><p class="s">Your current plan and what it includes.</p>
+            <div class="welcome subscription-welcome mt"><div><h2>Family Plan</h2><p>1 L milk + curd daily</p></div><b class="num plan-price">₹2,100<small>/mo</small></b></div>
+            <div class="sum mt"><span>Status</span><span class="badge">Active</span></div>
+            <div class="sum"><span>Renews on</span><b>1 Nov 2026</b></div>
+            <div class="sum"><span>Includes</span><b class="includes-text">Priority support, weekly ghee or butter</b></div>
+            <a class="btn mt" href="pricing.html">Change plan</a>
+          </div>
+          <div class="card">
+            <h3>Profile and delivery address</h3><p class="s">Keep your details up to date.</p>
+            <label class="l" for="fullName">Full name</label><input id="fullName" type="text" value="Priya Sharma">
+            <label class="l" for="mobile">Mobile number</label><input id="mobile" type="tel" value="+91 90000 00000">
+            <label class="l" for="email">Email</label><input id="email" type="email" value="priya.sharma@email.com">
+            <label class="l" for="address">Delivery address</label><input id="address" type="text" value="Flat 302, Green Park Apartments, Hyderabad">
+            <div class="sum mt"><span>WhatsApp delivery alerts</span><label class="sw"><input type="checkbox" checked><span></span></label></div>
+            <div class="sum"><span>SMS billing reminders</span><label class="sw"><input type="checkbox" checked><span></span></label></div>
+            <button class="btn mt" data-toast="Profile updated successfully.">Save changes</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="extras">
+        <div class="grid g2">
+          <div class="card"><h3>Add extras to tomorrow's delivery</h3><p class="s">Fresh farm products delivered along with your milk. Order before 9 PM.</p><div class="shop" id="shop"></div></div>
+          <div class="card"><h3>Your basket</h3><p class="s">Delivery: tomorrow, 6:00 – 7:00 AM</p><div id="cart" class="cart-content"></div><div class="sum mt"><span>Total</span><b id="cartTotal">₹0</b></div><button class="btn mt" id="placeOrder">Place order</button></div>
+        </div>
+      </section>
+
+      <section class="view" id="wallet">
+        <div class="grid g2">
+          <div>
+            <div class="welcome wallet-welcome"><div><p class="wallet-caption">Wallet balance</p><h2 id="bal">₹450</h2><p>Used automatically for extras and top-ups.</p></div><span class="chip">Auto-recharge on</span></div>
+            <div class="card mt">
+              <h3>Add money</h3><p class="s">Choose an amount or type your own.</p>
+              <div class="tabs" id="amts"><button data-a="200">₹200</button><button data-a="500" class="on">₹500</button><button data-a="1000">₹1,000</button></div>
+              <label class="l" for="amt">Amount (₹)</label><input type="number" id="amt" value="500" min="50" inputmode="numeric">
+              <button class="btn mt" id="addMoney">Add money to wallet</button>
+            </div>
+          </div>
+          <div class="card"><h3>Recent transactions</h3><p class="s">Your latest wallet activity.</p><div id="txns" class="transactions"></div><div class="sum mt"><span>Auto-recharge when balance is below ₹200</span><label class="sw"><input type="checkbox" checked><span></span></label></div></div>
+        </div>
+      </section>
+
+      <section class="view" id="offers">
+        <div class="grid g2e">
+          <div class="card">
+            <h3>Refer a friend, earn ₹100</h3><p class="s">When a friend subscribes with your code, you both get ₹100 in your wallet.</p>
+            <div class="code"><b>PRIYA-EVG15</b><button class="btn btn-sm" id="copyCode">Copy code</button></div>
+            <div class="grid g3 mt"><div class="mini"><b>3</b><span class="s">Friends joined</span></div><div class="mini"><b>₹300</b><span class="s">Earned</span></div><div class="mini"><b>1</b><span class="s">Pending</span></div></div>
+          </div>
+          <div class="card"><h3>Offers for you</h3><p class="s">Apply an offer to your next bill.</p><div id="offerList" class="offer-list"></div></div>
+        </div>
+      </section>
+
+      <section class="view" id="help">
+        <div class="grid g2e">
+          <div class="card">
+            <h3>Raise a support request</h3><p class="s">We usually reply within a few hours.</p>
+            <label class="l" for="tTopic">Topic</label>
+            <select id="tTopic"><option>Delivery issue</option><option>Billing question</option><option>Change my plan</option><option>Product quality</option></select>
+            <label class="l" for="tMsg">Message</label><textarea id="tMsg" placeholder="Tell us what happened..."></textarea>
+            <div class="btn-row mt"><button class="btn" id="sendTicket">Submit request</button><a class="btn o" href="tel:+910000000000">Call us</a></div>
+          </div>
+          <div class="card">
+            <h3>Your requests</h3><div id="tickets" class="ticket-list"></div>
+            <h3 class="mt">Quick answers</h3>
+            <details><summary>How do I skip a delivery?</summary><p class="s">Open Delivery Schedule, switch that day off and save.</p></details>
+            <details><summary>When is my bill generated?</summary><p class="s">On the 1st of every month. You can pay it in Billing History.</p></details>
+            <details><summary>Can I change my plan?</summary><p class="s">Yes. Go to My Plan &amp; Profile and choose Change plan.</p></details>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+  <div class="modal-content">
+    <h3 id="logoutTitle">Log out?</h3>
+    <p class="s">You will need to log in again to manage your deliveries.</p>
+    <button class="btn o" id="cancel">Cancel</button>
+    <button class="btn" id="confirm">Log out</button>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

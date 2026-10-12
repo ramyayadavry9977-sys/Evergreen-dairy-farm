@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+    <title>Evergreen Dairy Farm</title>
+    <link rel="icon" type="images/png" href="images/logo-1.png">
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="our-farm.css">
+    
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+
+</head>
+
+<body>
+
+  
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Evergreen Dairy Farm Home">
+                <img src="images/logo-1.png"
+                     alt="Evergreen Dairy Farm logo"
+                     class="brand-logo">
+
+                <span class="brand-text">
+                    <span class="brand-name">Evergreen</span>
+                    <span class="brand-subtitle">DAIRY FARM</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="mainNav"
+                    aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="24" height="24"
+                     fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+                <div class="home-dropdown">
+                    <button class="nav-link home-dropdown-btn"
+                            id="homeDropdownBtn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="homeDropdown">
+                        Home
+
+                        <svg class="dropdown-arrow"
+                             viewBox="0 0 24 24"
+                             width="15" height="15"
+                             fill="none" stroke="currentColor"
+                             stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdown">
+                        <a href="index.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 1</span>
+                            <span class="dropdown-link-description">Classic Design</span>
+                        </a>
+
+                        <a href="home-2.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 2</span>
+                            <span class="dropdown-link-description">Premium Design</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="our-farm.html" class="nav-link">Our Farm</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact-us.html" class="nav-link">Contact Us</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn"
+                        id="themeBtn"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+
+                    <svg viewBox="0 0 24 24" width="20" height="20"
+                         fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+                    </svg>
+                </button>
+
+                
+<button class="header-icon-btn" id="directionBtn"
+        type="button" aria-label="Toggle text direction"
+        title="Toggle text direction">
+    <svg viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         aria-hidden="true">
+        <path d="M7 8L3 12L7 16"/>
+        <path d="M3 12H11"/>
+        <path d="M17 8L21 12L17 16"/>
+        <path d="M13 12H21"/>
+    </svg>
+</button>
+
+                
+                    <a href="login.html" class="btn btn-primary login-btn">
+    Login
+</a>
+
+            </div>
+        </div>
+    </header>
+
+
+<!-- OUR FARM HERO SECTION -->
+<section class="our-farm-hero">
+    <div class="our-farm-hero-overlay"></div>
+
+    <div class="our-farm-hero-container">
+        <div class="our-farm-hero-content">
+
+            <span class="our-farm-hero-label">
+                <span class="our-farm-label-line"></span>
+                WELCOME TO OUR FARM
+            </span>
+
+            <h1>
+                Rooted in Nature.
+                <span>Raised with Care.</span>
+            </h1>
+
+            <p>
+                Discover the people, care, and everyday dedication
+                behind our dairy farm. From our farm to your family,
+                we believe that good dairy begins with thoughtful
+                care and a commitment to quality.
+            </p>
+
+            <div class="our-farm-hero-buttons">
+                <a href="#farm-story" class="our-farm-btn our-farm-btn-primary">
+                    Explore Our Farm
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a href="#farming-practices"
+                   class="our-farm-btn our-farm-btn-outline">
+                    Our Farming Practices
+                </a>
+            </div>
+
+            <div class="our-farm-hero-note">
+                <span class="our-farm-note-dot"></span>
+                Care in Every Step. Goodness in Every Drop.
+            </div>
+
+        </div>
+    </div>
+
+    <div class="our-farm-hero-bottom"></div>
+</section>
+
+
+
+<!-- WELCOME TO OUR FARM SECTION -->
+<section class="farm-welcome-section" id="farm-story">
+    <div class="farm-welcome-container">
+
+        <div class="farm-welcome-image">
+            <img
+                src="images/image-41.jpg"
+                alt="Dairy farmer caring for cows on the farm"
+                loading="lazy"
+            >
+
+            <div class="farm-welcome-image-badge">
+                <span class="farm-badge-icon" aria-hidden="true">✦</span>
+                <div>
+                    <strong>Care Comes First</strong>
+                    <span>Our everyday farm philosophy</span>
+                </div>
+            </div>
+
+            <span class="farm-welcome-image-accent"></span>
+        </div>
+
+        <div class="farm-welcome-content">
+
+            <span class="farm-welcome-label">
+                <span class="farm-welcome-label-line"></span>
+                A LITTLE ABOUT OUR FARM
+            </span>
+
+            <h2>
+                A Farm Built on
+                <span>Care and Quality</span>
+            </h2>
+
+            <p class="farm-welcome-intro">
+                Our farm is more than a place where dairy begins.
+                It is a community built around care, responsibility,
+                and a shared commitment to bringing dairy goodness
+                to families.
+            </p>
+
+            <p class="farm-welcome-description">
+                Every day brings an opportunity to do things thoughtfully,
+                from caring for our animals and maintaining clean
+                surroundings to handling our dairy products with attention.
+                We believe that quality starts with the small things
+                we do consistently.
+            </p>
+
+            <div class="farm-welcome-values">
+
+                <div class="farm-value-item">
+                    <div class="farm-value-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 21s8-4 8-11V5l-8-3-8 3v5c0 7 8 11 8 11Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+
+                    <div class="farm-value-text">
+                        <h3>Thoughtful Care</h3>
+                        <p>Putting responsible daily care at the heart of our work.</p>
+                    </div>
+                </div>
+
+                <div class="farm-value-item">
+                    <div class="farm-value-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 3v18"/>
+                            <path d="M5 7c0 4 3 6 7 6s7-2 7-6"/>
+                            <path d="M7 17c1.5 1.5 3.2 2 5 2s3.5-.5 5-2"/>
+                        </svg>
+                    </div>
+
+                    <div class="farm-value-text">
+                        <h3>Quality Mindset</h3>
+                        <p>Paying attention to cleanliness and careful handling.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#farm-life" class="farm-welcome-link">
+                Discover Life on Our Farm
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- LIFE ON OUR FARM SECTION -->
+<section class="farm-life-section" id="farm-life">
+    <div class="farm-life-container">
+
+        <div class="farm-life-heading">
+            <span class="farm-life-label">
+                <span class="farm-life-label-line"></span>
+                EVERYDAY FARM LIFE
+                <span class="farm-life-label-line"></span>
+            </span>
+
+            <h2>
+                Happy Cows.
+                <span>Thoughtful Care.</span>
+            </h2>
+
+            <p>
+                A good day on the farm starts with care and consistency.
+                Discover the everyday routines that help us look after
+                our animals and maintain a clean, welcoming farm.
+            </p>
+        </div>
+
+        <div class="farm-life-grid">
+
+            <!-- CARD 1 -->
+            <article class="farm-life-card">
+                <div class="farm-life-card-image">
+                    <img
+                        src="images/image-19.jpg"
+                        alt="Dairy cows resting in a clean farm environment"
+                        loading="lazy"
+                    >
+                    <span class="farm-life-number">01</span>
+                </div>
+
+                <div class="farm-life-card-content">
+                    <div class="farm-life-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 21s8-4 8-11V5l-8-3-8 3v5c0 7 8 11 8 11Z"/>
+                            <path d="M9 12c1.5-2 4.5-2 6 0"/>
+                        </svg>
+                    </div>
+
+                    <h3>Care for Our Animals</h3>
+
+                    <p>
+                        Attentive daily care and suitable resting spaces
+                        are important parts of a responsible dairy routine.
+                    </p>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="farm-life-card">
+                <div class="farm-life-card-image">
+                    <img
+                        src="images/image-21.jpg"
+                        alt="Farmer providing feed to dairy cows"
+                        loading="lazy"
+                    >
+                    <span class="farm-life-number">02</span>
+                </div>
+
+                <div class="farm-life-card-content">
+                    <div class="farm-life-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22V12"/>
+                            <path d="M12 15C6 15 3 11 3 5c6 0 9 3 9 10Z"/>
+                            <path d="M12 18c0-5 3-8 9-8 0 5-3 8-9 8Z"/>
+                        </svg>
+                    </div>
+
+                    <h3>Daily Feeding Routines</h3>
+
+                    <p>
+                        Consistent feeding routines and access to suitable
+                        feed help support the wellbeing of our dairy animals.
+                    </p>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="farm-life-card">
+                <div class="farm-life-card-image">
+                    <img
+                        src="images/image-42.jpg"
+                        alt="Clean dairy farm surroundings and water trough"
+                        loading="lazy"
+                    >
+                    <span class="farm-life-number">03</span>
+                </div>
+
+                <div class="farm-life-card-content">
+                    <div class="farm-life-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 3.5s6 6.2 6 11a6 6 0 0 1-12 0c0-4.8 6-11 6-11Z"/>
+                            <path d="M9 15a3 3 0 0 0 3 3"/>
+                        </svg>
+                    </div>
+
+                    <h3>Clean Farm Surroundings</h3>
+
+                    <p>
+                        Regular cleaning and attention to water access
+                        contribute to a better-managed farm environment.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="farm-life-bottom">
+            <span class="farm-life-bottom-icon" aria-hidden="true">✦</span>
+            <p>
+                <strong>Every little detail matters.</strong>
+                Good farm routines are built through daily attention and care.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FROM FARM TO FAMILY SECTION -->
+<section class="farm-journey-section" id="farm-journey">
+    <div class="farm-journey-container">
+
+        <div class="farm-journey-heading">
+            <span class="farm-journey-label">
+                <span class="farm-journey-label-line"></span>
+                OUR DAIRY JOURNEY
+                <span class="farm-journey-label-line"></span>
+            </span>
+
+            <h2>
+                From Our Farm
+                <span>to Your Family</span>
+            </h2>
+
+            <p>
+                Every step matters when it comes to dairy. Our journey
+                focuses on careful handling, cleanliness, and attention
+                to quality from the farm onward.
+            </p>
+        </div>
+
+        <div class="farm-journey-grid">
+
+            <!-- STEP 1 -->
+            <article class="farm-journey-card">
+                <div class="farm-journey-image">
+                    <img
+                        src="images/image-25.jpg"
+                        alt="Milk collection at a dairy farm"
+                        loading="lazy"
+                    >
+                    <span class="farm-journey-number">01</span>
+                </div>
+
+                <div class="farm-journey-content">
+                    <span class="farm-journey-step">STEP ONE</span>
+                    <h3>Milk Collection</h3>
+                    <p>
+                        Milk collection begins our dairy journey, with
+                        attention to cleanliness and careful handling.
+                    </p>
+                </div>
+            </article>
+
+            <!-- STEP 2 -->
+            <article class="farm-journey-card">
+                <div class="farm-journey-image">
+                    <img
+                        src="images/image-26.jpg"
+                        alt="Milk sample being checked for quality"
+                        loading="lazy"
+                    >
+                    <span class="farm-journey-number">02</span>
+                </div>
+
+                <div class="farm-journey-content">
+                    <span class="farm-journey-step">STEP TWO</span>
+                    <h3>Quality Checks</h3>
+                    <p>
+                        Appropriate quality checks help assess milk
+                        before it moves to the next stage.
+                    </p>
+                </div>
+            </article>
+
+            <!-- STEP 3 -->
+            <article class="farm-journey-card">
+                <div class="farm-journey-image">
+                    <img
+                        src="images/image-24.jpg"
+                        alt="Clean dairy equipment used for milk handling"
+                        loading="lazy"
+                    >
+                    <span class="farm-journey-number">03</span>
+                </div>
+
+                <div class="farm-journey-content">
+                    <span class="farm-journey-step">STEP THREE</span>
+                    <h3>Careful Handling</h3>
+                    <p>
+                        Clean equipment and suitable handling practices
+                        help protect dairy quality throughout processing.
+                    </p>
+                </div>
+            </article>
+
+            <!-- STEP 4 -->
+            <article class="farm-journey-card">
+                <div class="farm-journey-image">
+                    <img
+                        src="images/image-27.jpg"
+                        alt="Fresh dairy products prepared for delivery"
+                        loading="lazy"
+                    >
+                    <span class="farm-journey-number">04</span>
+                </div>
+
+                <div class="farm-journey-content">
+                    <span class="farm-journey-step">STEP FOUR</span>
+                    <h3>Ready for Delivery</h3>
+                    <p>
+                        Dairy products are prepared for distribution
+                        according to the farm's handling and storage process.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="farm-journey-footer">
+            <div class="farm-journey-footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3v18"/>
+                    <path d="M5 7c0 4 3 6 7 6s7-2 7-6"/>
+                    <path d="M7 17c1.5 1.5 3.2 2 5 2s3.5-.5 5-2"/>
+                </svg>
+            </div>
+
+            <p>
+                <strong>Care at every stage.</strong>
+                Our goal is to treat every step of the dairy journey with attention and responsibility.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- OUR QUALITY PROMISE SECTION -->
+<section class="farm-quality-section" id="farm-quality">
+    <div class="farm-quality-container">
+
+        <div class="farm-quality-heading">
+            <span class="farm-quality-label">
+                <span class="farm-quality-label-line"></span>
+                OUR QUALITY PROMISE
+                <span class="farm-quality-label-line"></span>
+            </span>
+
+            <h2>
+                Quality You Can
+                <span>Feel Good About</span>
+            </h2>
+
+            <p>
+                Good dairy begins with thoughtful everyday practices.
+                We believe cleanliness, careful handling, and attention
+                to detail all have an important role in delivering dairy
+                products to families.
+            </p>
+        </div>
+
+        <div class="farm-quality-grid">
+
+            <!-- QUALITY CARD 1 -->
+            <article class="farm-quality-card">
+                <div class="farm-quality-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 21s8-4 8-11V5l-8-3-8 3v5c0 7 8 11 8 11Z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+
+                <span class="farm-quality-number">01</span>
+
+                <h3>Careful Handling</h3>
+
+                <p>
+                    We value careful handling throughout the dairy process
+                    to help maintain product quality.
+                </p>
+            </article>
+
+            <!-- QUALITY CARD 2 -->
+            <article class="farm-quality-card">
+                <div class="farm-quality-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M7 3h10"/>
+                        <path d="M9 3v5l-4 7a5 5 0 0 0 4.3 6h5.4a5 5 0 0 0 4.3-6l-4-7V3"/>
+                        <path d="M7.5 15h9"/>
+                    </svg>
+                </div>
+
+                <span class="farm-quality-number">02</span>
+
+                <h3>Quality Attention</h3>
+
+                <p>
+                    Appropriate checks and attention at each relevant
+                    stage help support consistent dairy quality.
+                </p>
+            </article>
+
+            <!-- QUALITY CARD 3 -->
+            <article class="farm-quality-card">
+                <div class="farm-quality-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M3 11h18"/>
+                        <path d="M5 11V7l7-4 7 4v4"/>
+                        <path d="M6 11v8"/>
+                        <path d="M12 11v8"/>
+                        <path d="M18 11v8"/>
+                        <path d="M3 21h18"/>
+                    </svg>
+                </div>
+
+                <span class="farm-quality-number">03</span>
+
+                <h3>Clean Surroundings</h3>
+
+                <p>
+                    Clean work areas and suitable equipment care are
+                    important parts of responsible dairy operations.
+                </p>
+            </article>
+
+            <!-- QUALITY CARD 4 -->
+            <article class="farm-quality-card">
+                <div class="farm-quality-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 3v18"/>
+                        <path d="M5 7c0 4 3 6 7 6s7-2 7-6"/>
+                        <path d="M7 17c1.5 1.5 3.2 2 5 2s3.5-.5 5-2"/>
+                    </svg>
+                </div>
+
+                <span class="farm-quality-number">04</span>
+
+                <h3>Responsible Practices</h3>
+
+                <p>
+                    We believe in building good daily habits and
+                    continually paying attention to the details that matter.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="farm-quality-bottom">
+            <span class="farm-quality-bottom-mark" aria-hidden="true">✦</span>
+
+            <p>
+                <strong>Our promise is in the details.</strong>
+                Thoughtful practices make every step of the dairy journey matter.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- THE PEOPLE BEHIND THE FARM -->
+<section class="farm-people-section" id="farm-people">
+    <div class="farm-people-container">
+
+        <div class="farm-people-heading">
+            <span class="farm-people-label">
+                <span class="farm-people-label-line"></span>
+                THE PEOPLE BEHIND OUR FARM
+                <span class="farm-people-label-line"></span>
+            </span>
+
+            <h2>
+                Good Dairy Starts
+                <span>with Good People</span>
+            </h2>
+
+            <p>
+                Behind every farm routine are people whose time,
+                effort, and dedication keep things moving. Meet the
+                people who contribute to our everyday farm journey.
+            </p>
+        </div>
+
+        <div class="farm-people-grid">
+
+            <!-- TEAM MEMBER 1 -->
+            <article class="farm-person-card">
+                <div class="farm-person-image">
+                    <img
+                        src="images/image-29.jpg"
+                        alt="Farm owner standing at the dairy farm"
+                        loading="lazy"
+                    >
+
+                    <span class="farm-person-number">01</span>
+                </div>
+
+                <div class="farm-person-info">
+                    <span class="farm-person-role">FARM LEADERSHIP</span>
+                    <h3>Farm Owner</h3>
+                    <p>
+                        Helping guide the farm's daily priorities,
+                        values, and long-term direction.
+                    </p>
+                </div>
+            </article>
+
+            <!-- TEAM MEMBER 2 -->
+            <article class="farm-person-card">
+                <div class="farm-person-image">
+                    <img
+                        src="images/image-30.jpg"
+                        alt="Farm worker caring for dairy cows"
+                        loading="lazy"
+                    >
+
+                    <span class="farm-person-number">02</span>
+                </div>
+
+                <div class="farm-person-info">
+                    <span class="farm-person-role">ANIMAL CARE</span>
+                    <h3>Farm Care Team</h3>
+                    <p>
+                        Supporting daily feeding routines and
+                        attentive care for the animals.
+                    </p>
+                </div>
+            </article>
+
+            <!-- TEAM MEMBER 3 -->
+            <article class="farm-person-card">
+                <div class="farm-person-image">
+                    <img
+                        src="images/image-28.jpg"
+                        alt="Dairy team member working at the farm"
+                        loading="lazy"
+                    >
+
+                    <span class="farm-person-number">03</span>
+                </div>
+
+                <div class="farm-person-info">
+                    <span class="farm-person-role">DAILY OPERATIONS</span>
+                    <h3>Farm Operations Team</h3>
+                    <p>
+                        Helping with everyday tasks that keep
+                        farm activities organized and running.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="farm-people-footer">
+            <div class="farm-people-footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+            </div>
+
+            <div class="farm-people-footer-text">
+                <h3>Every Helping Hand Matters</h3>
+                <p>
+                    Our farm journey is shaped by the people who
+                    contribute their care and effort every day.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Our Responsibility Section -->
+<section class="farm-responsibility-section" id="farm-responsibility">
+    <div class="farm-responsibility-container">
+
+        <div class="farm-responsibility-image">
+            <img
+                src="images/image-10.avif"
+                alt="Responsible dairy farming and farm care"
+                loading="lazy"
+            >
+
+            <div class="farm-responsibility-image-badge">
+                <span class="responsibility-badge-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </span>
+                <div>
+                    <strong>Care in Every Step</strong>
+                    <span>Thoughtful farming practices</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="farm-responsibility-content">
+            <span class="farm-responsibility-label">
+                <span class="responsibility-label-line"></span>
+                FARMING WITH PURPOSE
+            </span>
+
+            <h2>Our Responsibility Goes Beyond the Farm</h2>
+
+            <p class="farm-responsibility-description">
+                We believe that good dairy farming begins with everyday
+                responsibility. From caring for our animals to maintaining
+                clean surroundings, we focus on thoughtful practices that
+                support the farm, our community, and the families we serve.
+            </p>
+
+            <div class="farm-responsibility-points">
+
+                <div class="responsibility-point">
+                    <div class="responsibility-point-icon">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <div>
+                        <h3>Animal Well-Being</h3>
+                        <p>
+                            We value attentive care, suitable feed, clean
+                            water, and comfortable surroundings for our animals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="responsibility-point">
+                    <div class="responsibility-point-icon">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div>
+                        <h3>Mindful Resource Use</h3>
+                        <p>
+                            We aim to use water, feed, and other farm resources
+                            thoughtfully and avoid unnecessary waste.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="responsibility-point">
+                    <div class="responsibility-point-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div>
+                        <h3>Community and Trust</h3>
+                        <p>
+                            We work to build lasting relationships through
+                            responsible practices and a commitment to quality.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="contact.html" class="farm-responsibility-btn">
+                Learn More About Our Farm
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="farm-final-cta" id="farm-visit">
+    <div class="farm-final-cta-container">
+
+        <div class="farm-final-cta-content">
+            <span class="farm-final-cta-label">
+                <span class="farm-final-cta-label-line"></span>
+                A LITTLE CLOSER TO NATURE
+            </span>
+
+            <h2>
+                Come Closer to
+                <span>Farm-Fresh Goodness.</span>
+            </h2>
+
+            <p>
+                Discover the care, dedication, and everyday work behind
+                our farm. We believe that good dairy begins with thoughtful
+                practices and a genuine commitment to quality.
+            </p>
+
+            <div class="farm-final-cta-buttons">
+                <a href="contact.html" class="farm-cta-primary">
+                    Get in Touch
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
+                </a>
+
+                <a href="services.html" class="farm-cta-secondary">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+
+        <div class="farm-final-cta-decoration" aria-hidden="true">
+            <div class="farm-cta-circle farm-cta-circle-one"></div>
+            <div class="farm-cta-circle farm-cta-circle-two"></div>
+
+            <svg class="farm-cta-leaf farm-cta-leaf-one"
+                viewBox="0 0 100 100">
+                <path d="M15 85C20 40 48 12 88 12C88 52 60 82 15 85Z"
+                    fill="currentColor"/>
+                <path d="M15 85C36 63 55 43 78 25"
+                    fill="none"
+                    stroke="#F4B942"
+                    stroke-width="3"
+                    stroke-linecap="round"/>
+            </svg>
+
+            <svg class="farm-cta-leaf farm-cta-leaf-two"
+                viewBox="0 0 100 100">
+                <path d="M15 85C20 40 48 12 88 12C88 52 60 82 15 85Z"
+                    fill="currentColor"/>
+                <path d="M15 85C36 63 55 43 78 25"
+                    fill="none"
+                    stroke="#F4B942"
+                    stroke-width="3"
+                    stroke-linecap="round"/>
+            </svg>
+
+            <div class="farm-cta-decoration-text">
+                <span>EVERGREEN</span>
+                <strong>Grown with Care</strong>
+                <span>ROOTED IN NATURE</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo-1.png"
+                         alt="Evergreen Dairy Farm logo">
+
+                    <span class="footer-brand-text">
+                        <span class="footer-brand-name">Evergreen</span>
+                        <span class="footer-brand-subtitle">DAIRY FARM</span>
+                    </span>
+                </a>
+
+                <p>
+                    Bringing farm freshness to your home with care,
+                    quality, and a commitment to better dairy.
+                </p>
+
+
+                <div class="footer-socials">
+    <a href="https://www.facebook.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.3V13h2.8v8z"/>
+        </svg>
+    </a>
+
+    <a href="https://www.instagram.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle class="instagram-dot" cx="17.5" cy="6.8" r="1"/>
+        </svg>
+    </a>
+
+   <a href="https://www.youtube.com/"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="YouTube">
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+            d="M23.2 6.2a3 3 0 0 0-2.1-2.1C19.2 3.6 12 3.6 12 3.6s-7.2 0-9.1.5A3 3 0 0 0 .8 6.2 31 31 0 0 0 .3 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.1.5 9.1.5s7.2 0 9.1-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5.8 31 31 0 0 0-.5-5.8Z"
+            fill="currentColor"
+            stroke="none"/>
+
+        <path d="m9.6 8.5 6.1 3.5-6.1 3.5Z"
+              fill="#FFFFFF"
+              stroke="none"/>
+    </svg>
+</a>
+
+    <a href="https://wa.me/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z"/>
+            <path d="M9 8.5c.3-.5.6-.5.9-.5l.6 1.5-.7.9c.6 1.3 1.5 2.1 2.8 2.7l.8-.9 1.6.7c.2.1.2.5.1.8-.3.7-1 1.2-1.8 1.2-2.4-.2-5.9-3.1-6-5.3 0-.5.7-1 1.7-1.1Z"/>
+        </svg>
+    </a>
+</div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="our-farm.html">Our Farm</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="blog.html">Blog</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Have questions about our dairy products or services?</p>
+                <a href="contact-us.html" class="btn btn-primary footer-contact-btn">
+                    Contact Our Team
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span> Evergreen Dairy Farm.
+                All rights reserved.
+            </p>
+
+            <a href="index.html">Back to Home</a>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const homeDropdown = document.querySelector(".home-dropdown");
+    const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+
+    const themeBtn = document.getElementById("themeBtn");
+    const directionBtn = document.getElementById("directionBtn");
+
+    const currentYear = document.getElementById("currentYear");
+
+    /* FOOTER YEAR */
+
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+
+    /* DARK MODE */
+
+    function updateThemeButton() {
+        if (!themeBtn) return;
+
+        const isDark = root.classList.contains("dark-mode");
+
+        themeBtn.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+
+        themeBtn.setAttribute(
+            "title",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+
+    const savedTheme = localStorage.getItem("evergreenTheme");
+
+    if (savedTheme === "dark") {
+        root.classList.add("dark-mode");
+    } else {
+        root.classList.remove("dark-mode");
+    }
+
+    updateThemeButton();
+
+    if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+            root.classList.toggle("dark-mode");
+
+            const theme = root.classList.contains("dark-mode")
+                ? "dark"
+                : "light";
+
+            localStorage.setItem("evergreenTheme", theme);
+            updateThemeButton();
+        });
+    }
+
+  
+
+    function updateDirectionButton() {
+        if (!directionBtn) return;
+
+        const isRTL = root.getAttribute("dir") === "rtl";
+
+        directionBtn.setAttribute(
+            "aria-label",
+            isRTL ? "Switch to left-to-right layout" : "Switch to right-to-left layout"
+        );
+
+        directionBtn.setAttribute(
+            "title",
+            isRTL ? "Switch to LTR" : "Switch to RTL"
+        );
+    }
+
+    const savedDirection = localStorage.getItem("evergreenDirection");
+
+    root.setAttribute("dir", savedDirection === "rtl" ? "rtl" : "ltr");
+    updateDirectionButton();
+
+    if (directionBtn) {
+        directionBtn.addEventListener("click", () => {
+            const newDirection =
+                root.getAttribute("dir") === "rtl" ? "ltr" : "rtl";
+
+            root.setAttribute("dir", newDirection);
+            localStorage.setItem("evergreenDirection", newDirection);
+
+            updateDirectionButton();
+        });
+    }
+
+
+    function closeHomeDropdown() {
+        if (!homeDropdown || !homeDropdownBtn) return;
+
+        homeDropdown.classList.remove("is-open");
+        homeDropdownBtn.setAttribute("aria-expanded", "false");
+    }
+
+    if (homeDropdown && homeDropdownBtn) {
+        homeDropdownBtn.addEventListener("click", (event) => {
+            event.stopPropagation();
+
+            const isOpen = homeDropdown.classList.toggle("is-open");
+
+            homeDropdownBtn.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!homeDropdown.contains(event.target)) {
+                closeHomeDropdown();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeHomeDropdown();
+            }
+        });
+
+        homeDropdown.querySelectorAll(".dropdown-link").forEach((link) => {
+            link.addEventListener("click", closeHomeDropdown);
+        });
+    }
+
+   
+
+    function closeMobileMenu() {
+        if (!mainNav || !menuToggle) return;
+
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+        closeHomeDropdown();
+    }
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("is-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+
+            if (!isOpen) {
+                closeHomeDropdown();
+            }
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth <= 1000) {
+                    closeMobileMenu();
+                }
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 1000) {
+                closeMobileMenu();
+            }
+        });
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector("#mainNav");
+
+    if (!nav) return;
+
+    const currentPage =
+        window.location.pathname.split("/").filter(Boolean).pop()
+        || "index.html";
+
+    const navLinks = nav.querySelectorAll("a.nav-link");
+    const dropdownLinks = nav.querySelectorAll(".dropdown-link");
+    const homeButton = document.querySelector("#homeDropdownBtn");
+
+    // Highlight the current navigation page
+    navLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight the current Home dropdown page
+    dropdownLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight Home when either home page is open
+    if (homeButton) {
+        const isHomePage =
+            currentPage === "index.html" ||
+            currentPage === "home-2.html";
+
+        homeButton.classList.toggle("active", isHomePage);
+    }
+});
+
+    </script>
+</body>
+</html>

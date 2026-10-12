@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+    <title>Evergreen Dairy Farm</title>
+    <link rel="icon" type="images/png" href="images/logo-1.png">
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="services-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+  
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Evergreen Dairy Farm Home">
+                <img src="images/logo-1.png"
+                     alt="Evergreen Dairy Farm logo"
+                     class="brand-logo">
+
+                <span class="brand-text">
+                    <span class="brand-name">Evergreen</span>
+                    <span class="brand-subtitle">DAIRY FARM</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="mainNav"
+                    aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="24" height="24"
+                     fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+                <div class="home-dropdown">
+                    <button class="nav-link home-dropdown-btn"
+                            id="homeDropdownBtn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="homeDropdown">
+                        Home
+
+                        <svg class="dropdown-arrow"
+                             viewBox="0 0 24 24"
+                             width="15" height="15"
+                             fill="none" stroke="currentColor"
+                             stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="dropdown-menu" id="homeDropdown">
+                        <a href="index.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 1</span>
+                            <span class="dropdown-link-description">Classic Design</span>
+                        </a>
+
+                        <a href="home-2.html" class="dropdown-link">
+                            <span class="dropdown-link-title">Home 2</span>
+                            <span class="dropdown-link-description">Premium Design</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="our-farm.html" class="nav-link">Our Farm</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact-us.html" class="nav-link">Contact Us</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn"
+                        id="themeBtn"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+
+                    <svg viewBox="0 0 24 24" width="20" height="20"
+                         fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+                    </svg>
+                </button>
+
+                
+<button class="header-icon-btn" id="directionBtn"
+        type="button" aria-label="Toggle text direction"
+        title="Toggle text direction">
+    <svg viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         aria-hidden="true">
+        <path d="M7 8L3 12L7 16"/>
+        <path d="M3 12H11"/>
+        <path d="M17 8L21 12L17 16"/>
+        <path d="M13 12H21"/>
+    </svg>
+</button>
+
+                
+                    <a href="login.html" class="btn btn-primary login-btn">
+    Login
+</a>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+<body>
+
+    <main class="service-details-page pure-ghee-page">
+
+        <!-- HERO SECTION -->
+        <section class="service-hero"
+            style="--service-hero-image: url('images/image-6.jpg');">
+
+            <div class="service-hero-overlay"></div>
+
+            <div class="service-container service-hero-content">
+
+                <nav class="service-breadcrumb" aria-label="Breadcrumb">
+                   
+                </nav>
+
+                <span class="service-label">
+                    <span class="service-label-line"></span>
+                    TRADITIONAL DAIRY GOODNESS
+                </span>
+
+                <h1>Pure Ghee, <br>Rich in Tradition.</h1>
+
+                <p>
+                    Experience the rich aroma, golden goodness, and authentic
+                    taste of pure ghee, carefully prepared to bring traditional
+                    dairy quality to your everyday meals.
+                </p>
+
+                <div class="service-hero-buttons">
+                    <a href="contact-us.html" class="service-btn service-btn-primary">
+                        Order Pure Ghee
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#ghee-overview" class="service-btn service-btn-outline">
+                        Discover Our Quality
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRODUCT OVERVIEW -->
+        <section class="service-overview section-spacing" id="ghee-overview">
+
+            <div class="service-container service-overview-grid">
+
+                <div class="service-overview-image">
+                    <img src="images/image-6.jpg"
+                         alt="Golden pure ghee in a traditional bowl"
+                         loading="lazy">
+
+                    <div class="service-image-badge">
+                        <i class="fa-solid fa-award"></i>
+                        <div>
+                            <strong>Pure Goodness</strong>
+                            <span>Quality You Can Trust</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-overview-content">
+
+                    <span class="service-label">
+                        <span class="service-label-line"></span>
+                        ABOUT OUR GHEE
+                    </span>
+
+                    <h2>Golden Goodness in Every Spoonful</h2>
+
+                    <p>
+                        At Evergreen Dairy Farm, we believe that great food
+                        begins with quality ingredients. Our pure ghee brings
+                        a rich aroma and traditional flavour to the meals
+                        you prepare for your family.
+                    </p>
+
+                    <p>
+                        From everyday cooking to festive recipes, ghee adds
+                        a distinctive taste to a wide variety of dishes.
+                        We focus on careful preparation, product quality,
+                        and freshness in every batch.
+                    </p>
+
+                    <ul class="service-benefit-list">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Rich aroma and traditional flavour
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Suitable for everyday cooking
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            A wonderful addition to festive recipes
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Carefully prepared with quality in mind
+                        </li>
+                    </ul>
+
+                    <a href="contact-us.html" class="service-text-link">
+                        Enquire About Pure Ghee
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRODUCT FEATURES -->
+        <section class="service-features section-spacing">
+
+            <div class="service-container">
+
+                <div class="service-section-heading">
+                    <span class="service-label">
+                        <span class="service-label-line"></span>
+                        WHY CHOOSE OUR GHEE
+                    </span>
+
+                    <h2>A Touch of Tradition in Every Meal</h2>
+
+                    <p>
+                        Bring home a familiar taste that complements
+                        traditional recipes and everyday favourites.
+                    </p>
+                </div>
+
+                <div class="service-features-grid">
+
+                    <article class="service-feature-card">
+                        <div class="service-feature-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+
+                        <h3>Golden Appearance</h3>
+
+                        <p>
+                            Enjoy the characteristic golden appearance
+                            associated with traditional ghee.
+                        </p>
+                    </article>
+
+                    <article class="service-feature-card">
+                        <div class="service-feature-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <h3>Traditional Flavour</h3>
+
+                        <p>
+                            Add a familiar, rich flavour to your favourite
+                            homemade dishes.
+                        </p>
+                    </article>
+
+                    <article class="service-feature-card">
+                        <div class="service-feature-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+
+                        <h3>Everyday Cooking</h3>
+
+                        <p>
+                            Use it in a variety of recipes, from savoury
+                            dishes to traditional sweets.
+                        </p>
+                    </article>
+
+                   
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- QUALITY SECTION -->
+        <section class="service-quality section-spacing">
+
+            <div class="service-container service-quality-grid">
+
+                <div class="service-quality-content">
+
+                    <span class="service-label">
+                        <span class="service-label-line"></span>
+                        OUR QUALITY PROMISE
+                    </span>
+
+                    <h2>Quality That Belongs in Your Kitchen</h2>
+
+                    <p>
+                        We understand how important the ingredients you
+                        choose are to your daily cooking. That is why we
+                        place importance on careful preparation, appropriate
+                        storage, and product handling.
+                    </p>
+
+                    <p>
+                        Whether you are preparing a traditional family meal
+                        or making sweets for a celebration, pure ghee can
+                        add its distinctive aroma and flavour to your recipes.
+                    </p>
+
+                    <div class="service-benefit-list">
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Careful product handling</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Suitable for a variety of recipes</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Quality-focused preparation</span>
+                        </div>
+
+                    </div>
+
+                    <a href="contact-us.html" class="service-btn service-btn-primary">
+                        Contact Our Farm
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-quality-image">
+                    <img src="images/image-44.jpg"
+                         alt="Pure ghee for traditional cooking"
+                         loading="lazy">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RELATED PRODUCTS -->
+        <section class="related-products section-spacing">
+
+            <div class="service-container">
+
+                <div class="service-section-heading">
+                    <span class="service-label">
+                        <span class="service-label-line"></span>
+                        EXPLORE MORE
+                    </span>
+
+                    <h2>More Goodness from Our Farm</h2>
+
+                    <p>
+                        Discover more dairy favourites to complement
+                        your everyday meals.
+                    </p>
+                </div>
+
+                <div class="related-products-grid">
+
+                    <article class="related-product-card">
+                        <a href="fresh-milk.html" class="related-product-image">
+                            <img src="images/image-4.webp"
+                                 alt="Fresh milk"
+                                 loading="lazy">
+                        </a>
+
+                        <div class="related-product-content">
+                            <span class="product-category">DAILY ESSENTIAL</span>
+                            <h3>Fresh Milk</h3>
+                            <p>
+                                Fresh milk for your morning routine and
+                                everyday family needs.
+                            </p>
+                            <a href="fresh-milk.html">
+                                Explore Product
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="related-product-card">
+                        <a href="fresh-curd.html" class="related-product-image">
+                            <img src="images/image-5.jpg"
+                                 alt="Fresh curd"
+                                 loading="lazy">
+                        </a>
+
+                        <div class="related-product-content">
+                            <span class="product-category">FRESH & CREAMY</span>
+                            <h3>Fresh Curd</h3>
+                            <p>
+                                A creamy dairy favourite to enjoy with
+                                everyday meals.
+                            </p>
+                            <a href="fresh-curd.html">
+                                Explore Product
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="related-product-card">
+                        <a href="fresh-butter.html" class="related-product-image">
+                            <img src="images/image-7.jpg"
+                                 alt="Fresh butter"
+                                 loading="lazy">
+                        </a>
+
+                        <div class="related-product-content">
+                            <span class="product-category">RICH & CREAMY</span>
+                            <h3>Fresh Butter</h3>
+                            <p>
+                                Add a creamy touch to toast, snacks,
+                                and your favourite recipes.
+                            </p>
+                            <a href="fresh-butter.html">
+                                Explore Product
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+        <section class="service-cta">
+
+            <div class="service-container service-cta-content">
+
+                <div>
+                    <span class="service-label">
+                        <span class="service-label-line"></span>
+                        BRING HOME TRADITION
+                    </span>
+
+                    <h2>Make Every Meal a Little More Special</h2>
+
+                    <p>
+                        Interested in our pure ghee? Get in touch with
+                        Evergreen Dairy Farm to learn more about our products.
+                    </p>
+                </div>
+
+                <a href="contact-us.html" class="service-btn service-btn-outline">
+                    Get in Touch
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo-1.png"
+                         alt="Evergreen Dairy Farm logo">
+
+                    <span class="footer-brand-text">
+                        <span class="footer-brand-name">Evergreen</span>
+                        <span class="footer-brand-subtitle">DAIRY FARM</span>
+                    </span>
+                </a>
+
+                <p>
+                    Bringing farm freshness to your home with care,
+                    quality, and a commitment to better dairy.
+                </p>
+
+
+                <div class="footer-socials">
+    <a href="https://www.facebook.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.3V13h2.8v8z"/>
+        </svg>
+    </a>
+
+    <a href="https://www.instagram.com/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle class="instagram-dot" cx="17.5" cy="6.8" r="1"/>
+        </svg>
+    </a>
+
+   <a href="https://www.youtube.com/"
+   class="social-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="YouTube">
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+            d="M23.2 6.2a3 3 0 0 0-2.1-2.1C19.2 3.6 12 3.6 12 3.6s-7.2 0-9.1.5A3 3 0 0 0 .8 6.2 31 31 0 0 0 .3 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.1.5 9.1.5s7.2 0 9.1-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5.8 31 31 0 0 0-.5-5.8Z"
+            fill="currentColor"
+            stroke="none"/>
+
+        <path d="m9.6 8.5 6.1 3.5-6.1 3.5Z"
+              fill="#FFFFFF"
+              stroke="none"/>
+    </svg>
+</a>
+
+    <a href="https://wa.me/" class="social-link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z"/>
+            <path d="M9 8.5c.3-.5.6-.5.9-.5l.6 1.5-.7.9c.6 1.3 1.5 2.1 2.8 2.7l.8-.9 1.6.7c.2.1.2.5.1.8-.3.7-1 1.2-1.8 1.2-2.4-.2-5.9-3.1-6-5.3 0-.5.7-1 1.7-1.1Z"/>
+        </svg>
+    </a>
+</div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="our-farm.html">Our Farm</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="blog.html">Blog</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Have questions about our dairy products or services?</p>
+                <a href="contact-us.html" class="btn btn-primary footer-contact-btn">
+                    Contact Our Team
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span> Evergreen Dairy Farm.
+                All rights reserved.
+            </p>
+
+            <a href="index.html">Back to Home</a>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const root = document.documentElement;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const homeDropdown = document.querySelector(".home-dropdown");
+    const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+
+    const themeBtn = document.getElementById("themeBtn");
+    const directionBtn = document.getElementById("directionBtn");
+
+    const currentYear = document.getElementById("currentYear");
+
+    /* FOOTER YEAR */
+
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+
+    /* DARK MODE */
+
+    function updateThemeButton() {
+        if (!themeBtn) return;
+
+        const isDark = root.classList.contains("dark-mode");
+
+        themeBtn.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+
+        themeBtn.setAttribute(
+            "title",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+
+    const savedTheme = localStorage.getItem("evergreenTheme");
+
+    if (savedTheme === "dark") {
+        root.classList.add("dark-mode");
+    } else {
+        root.classList.remove("dark-mode");
+    }
+
+    updateThemeButton();
+
+    if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+            root.classList.toggle("dark-mode");
+
+            const theme = root.classList.contains("dark-mode")
+                ? "dark"
+                : "light";
+
+            localStorage.setItem("evergreenTheme", theme);
+            updateThemeButton();
+        });
+    }
+
+  
+
+    function updateDirectionButton() {
+        if (!directionBtn) return;
+
+        const isRTL = root.getAttribute("dir") === "rtl";
+
+        directionBtn.setAttribute(
+            "aria-label",
+            isRTL ? "Switch to left-to-right layout" : "Switch to right-to-left layout"
+        );
+
+        directionBtn.setAttribute(
+            "title",
+            isRTL ? "Switch to LTR" : "Switch to RTL"
+        );
+    }
+
+    const savedDirection = localStorage.getItem("evergreenDirection");
+
+    root.setAttribute("dir", savedDirection === "rtl" ? "rtl" : "ltr");
+    updateDirectionButton();
+
+    if (directionBtn) {
+        directionBtn.addEventListener("click", () => {
+            const newDirection =
+                root.getAttribute("dir") === "rtl" ? "ltr" : "rtl";
+
+            root.setAttribute("dir", newDirection);
+            localStorage.setItem("evergreenDirection", newDirection);
+
+            updateDirectionButton();
+        });
+    }
+
+
+    function closeHomeDropdown() {
+        if (!homeDropdown || !homeDropdownBtn) return;
+
+        homeDropdown.classList.remove("is-open");
+        homeDropdownBtn.setAttribute("aria-expanded", "false");
+    }
+
+    if (homeDropdown && homeDropdownBtn) {
+        homeDropdownBtn.addEventListener("click", (event) => {
+            event.stopPropagation();
+
+            const isOpen = homeDropdown.classList.toggle("is-open");
+
+            homeDropdownBtn.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!homeDropdown.contains(event.target)) {
+                closeHomeDropdown();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeHomeDropdown();
+            }
+        });
+
+        homeDropdown.querySelectorAll(".dropdown-link").forEach((link) => {
+            link.addEventListener("click", closeHomeDropdown);
+        });
+    }
+
+   
+
+    function closeMobileMenu() {
+        if (!mainNav || !menuToggle) return;
+
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+        closeHomeDropdown();
+    }
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("is-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+
+            if (!isOpen) {
+                closeHomeDropdown();
+            }
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth <= 1000) {
+                    closeMobileMenu();
+                }
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 1000) {
+                closeMobileMenu();
+            }
+        });
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector("#mainNav");
+
+    if (!nav) return;
+
+    const currentPage =
+        window.location.pathname.split("/").filter(Boolean).pop()
+        || "index.html";
+
+    const navLinks = nav.querySelectorAll("a.nav-link");
+    const dropdownLinks = nav.querySelectorAll(".dropdown-link");
+    const homeButton = document.querySelector("#homeDropdownBtn");
+
+    // Highlight the current navigation page
+    navLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight the current Home dropdown page
+    dropdownLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href")
+            ?.split("/")
+            .pop();
+
+        link.classList.toggle("active", linkPage === currentPage);
+    });
+
+    // Highlight Home when either home page is open
+    if (homeButton) {
+        const isHomePage =
+            currentPage === "index.html" ||
+            currentPage === "home-2.html";
+
+        homeButton.classList.toggle("active", isHomePage);
+    }
+});
+
+    </script>
+</body>
+</html>

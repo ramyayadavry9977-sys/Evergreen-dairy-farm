@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Everygreen Dairy Farm</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<main class="login-page">
+
+    <div class="login-toolbar">
+        <button type="button" class="login-tool-btn"
+                id="themeBtn" aria-label="Toggle theme"
+                title="Toggle Light/Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button type="button" class="login-tool-btn"
+                id="directionBtn" aria-label="Toggle text direction"
+                title="Toggle RTL">
+            <i class="fa-solid fa-right-left"></i>
+        </button>
+    </div>
+
+    <section class="login-card">
+
+        <a href="index.html" class="login-brand">
+            <img src="images/logo-1.png"
+                 alt="Everygreen Dairy Farm Logo"
+                 class="login-logo">
+
+            <span class="login-brand-text">
+                Everygreen
+                <span>Dairy Farm</span>
+            </span>
+        </a>
+
+        <div class="login-heading">
+            <span class="login-eyebrow">WELCOME BACK</span>
+
+            <h1>Welcome <span>Back!</span></h1>
+
+            <p>Sign in to your dairy farm account.</p>
+        </div>
+
+        <form class="login-form" id="loginForm">
+
+            <div class="login-field">
+                <label for="email">Email Address</label>
+
+                <div class="login-input-wrap">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           autocomplete="email"
+                           required>
+                </div>
+            </div>
+
+            <div class="login-field">
+                <label for="password">Password</label>
+
+                <div class="login-input-wrap">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Enter your password"
+                           autocomplete="current-password"
+                           required>
+
+                    <button type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="Show password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="login-options">
+                <label class="remember-option">
+                    <input type="checkbox" name="remember">
+                    <span>Remember me</span>
+                </label>
+
+                <a href="forgot-password.html" class="forgot-link">
+                    Forgot Password?
+                </a>
+            </div>
+
+            <button type="submit" class="login-submit-btn">
+                <span>Sign In</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="login-message" id="loginMessage"
+               role="status" aria-live="polite"></p>
+
+            <p class="login-register">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+        </form>
+
+        <div class="login-bottom-note">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Secure access to your farm dashboard</span>
+        </div>
+
+    </section>
+
+    <p class="login-copyright">
+        © 2026 Everygreen Dairy Farm. All rights reserved.
+    </p>
+
+</main>
+
+<script>
+
+const html = document.documentElement;
+
+const themeBtn = document.getElementById("themeBtn");
+const directionBtn = document.getElementById("directionBtn");
+const passwordInput = document.getElementById("password");
+const passwordToggle = document.getElementById("passwordToggle");
+const loginForm = document.getElementById("loginForm");
+const loginMessage = document.getElementById("loginMessage");
+
+/* Restore saved theme */
+const savedTheme = localStorage.getItem("everygreenTheme");
+
+html.classList.toggle("dark-mode", savedTheme === "dark");
+
+function updateThemeIcon() {
+    const icon = themeBtn.querySelector("i");
+    const isDark = html.classList.contains("dark-mode");
+
+    icon.className = isDark
+        ? "fa-solid fa-sun"
+        : "fa-solid fa-moon";
+
+    themeBtn.title = isDark
+        ? "Switch to Light Mode"
+        : "Switch to Dark Mode";
+}
+
+updateThemeIcon();
+
+/* Light and Dark Mode */
+themeBtn.addEventListener("click", () => {
+    html.classList.toggle("dark-mode");
+
+    localStorage.setItem(
+        "everygreenTheme",
+        html.classList.contains("dark-mode") ? "dark" : "light"
+    );
+
+    updateThemeIcon();
+});
+
+/* Restore direction */
+const savedDirection = localStorage.getItem("everygreenDirection");
+
+if (savedDirection === "rtl" || savedDirection === "ltr") {
+    html.dir = savedDirection;
+}
+
+function updateDirectionButton() {
+    directionBtn.title = html.dir === "rtl"
+        ? "Switch to LTR"
+        : "Switch to RTL";
+}
+
+updateDirectionButton();
+
+/* RTL and LTR */
+directionBtn.addEventListener("click", () => {
+    html.dir = html.dir === "rtl" ? "ltr" : "rtl";
+
+    localStorage.setItem("everygreenDirection", html.dir);
+
+    updateDirectionButton();
+});
+
+/* Show and hide password */
+passwordToggle.addEventListener("click", () => {
+    const shouldShow = passwordInput.type === "password";
+
+    passwordInput.type = shouldShow ? "text" : "password";
+
+    passwordToggle.innerHTML = shouldShow
+        ? '<i class="fa-regular fa-eye-slash"></i>'
+        : '<i class="fa-regular fa-eye"></i>';
+
+    passwordToggle.setAttribute(
+        "aria-label",
+        shouldShow ? "Hide password" : "Show password"
+    );
+});
+
+/* Login form */
+loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    loginMessage.textContent =
+        "Connect this form to your authentication system to enable login.";
+});
+
+</script>
+
+</body>
+</html>
